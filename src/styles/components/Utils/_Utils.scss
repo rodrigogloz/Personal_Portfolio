@@ -1,0 +1,20 @@
+// ScrollIndicator:
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+  display: block;
+  position: fixed;
+}
+
+.progress-bar {
+  display: block;
+  background-color: $accent;
+  height: 5px;
+  width: 0px;
+  position: absolute;
+  opacity: 80%;
+}
+
+//
