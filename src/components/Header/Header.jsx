@@ -12,7 +12,8 @@ export const Header = () => {
                 href="#home"
                 className="header__nav-a hover-underline font-subtitle"
               >
-                <span aria-hidden="true">00</span>Inicio
+                <span aria-hidden="true">00</span>
+                Inicio
               </a>
             </li>
             <li>
@@ -20,7 +21,8 @@ export const Header = () => {
                 href="#about"
                 className="header__nav-a hover-underline font-subtitle"
               >
-                <span aria-hidden="true">01</span>Sobre mí
+                <span aria-hidden="true">01</span>
+                Sobre mí
               </a>
             </li>
             <li>
@@ -28,7 +30,8 @@ export const Header = () => {
                 href="#projects"
                 className="header__nav-a hover-underline font-subtitle"
               >
-                <span aria-hidden="true">02</span>Proyectos
+                <span aria-hidden="true">02</span>
+                Proyectos
               </a>
             </li>
             <li>
@@ -36,7 +39,8 @@ export const Header = () => {
                 href="#contact"
                 className="header__nav-a hover-underline font-subtitle"
               >
-                <span aria-hidden="true">03</span>Contacto
+                <span aria-hidden="true">03</span>
+                Contacto
               </a>
             </li>
           </ul>

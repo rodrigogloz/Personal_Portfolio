@@ -10,8 +10,10 @@
 
 html {
   background-color: $dark-bg;
-
   scroll-behavior: smooth;
+}
+
+h1 {
 }
 
 a {
@@ -114,8 +116,10 @@ ul {
 
 .glass {
   color: #ecf0f1;
+
   padding: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  // background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.7);
   // border: solid 1px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
