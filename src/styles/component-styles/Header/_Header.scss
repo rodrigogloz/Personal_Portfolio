@@ -28,13 +28,6 @@ header {
   padding: 0 10px 1px 10px;
   font-weight: 400;
   // filter: drop-shadow(-2px 2px 0px $accent);
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(192, 2, 255),
-    rgb(24, 12, 255)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .header__nav-ul {

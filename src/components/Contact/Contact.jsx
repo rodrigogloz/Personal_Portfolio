@@ -1,17 +1,16 @@
 import React from "react";
 
-export const Home = () => {
+export const Contact = () => {
   return (
-    <div className="home__section" id="home">
-      <div className="home__section-grid">
-        <div className="home__section-content-left">
+    <div className="Contact__section" id="contact">
+      <span className="gradient-div" />
+      <div className="Contact__section-grid">
+        <div className="Contact__section-content-left">
           <h1>
             Bienvenid@.
             <br />
-            Me llamo Rodrigo y soy desarrollador{" "}
-            <span className="gradient-text">Front-End</span>.
+            Me llamo Rodrigo y soy desarrollador Front-End.
           </h1>
-          <hr className="separator" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero
             eveniet quis aliquam cum vitae odit id aperiam unde sequi fuga
@@ -19,7 +18,7 @@ export const Home = () => {
             perspiciatis.
           </p>
         </div>
-        <div className="home__section-content-right"></div>
+        <div className="Contact__section-content-right"></div>
       </div>
     </div>
   );

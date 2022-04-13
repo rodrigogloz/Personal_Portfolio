@@ -3,6 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <div className="About__section" id="about">
+      <span className="gradient-div" />
       <div className="About__section-grid">
         <div className="About__section-content-left">
           <h1>

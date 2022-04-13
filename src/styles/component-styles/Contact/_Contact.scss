@@ -1,7 +1,9 @@
-.About__section {
-  height: 100vh;
+.Contact__section {
+  // min-height: calc(75vh - 53px);
+  min-height: 80vh;
   width: 100vw;
 
+  // background-color: lighten($color: $dark-bg, $amount: 30);
   background-color: white;
   // background-color: $dark-mode-bg;
 
@@ -21,14 +23,14 @@
   }
 }
 
-.About__section-grid {
+.Contact__section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   margin-inline: 10px;
 }
 
-.About__section-content-left {
+.Contact__section-content-left {
   width: 80%;
   h1 {
     color: $dark-bg;
@@ -42,7 +44,7 @@
   }
 }
 
-.About__section-content-right {
+.Contact__section-content-right {
   width: 35%;
   max-height: 90%;
 

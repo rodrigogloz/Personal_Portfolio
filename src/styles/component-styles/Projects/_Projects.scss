@@ -1,9 +1,13 @@
-.About__section {
+.Projects__section {
   height: 100vh;
   width: 100vw;
 
-  background-color: white;
+  // background-color: white;
   // background-color: $dark-mode-bg;
+  // background-color: lighten($color: $dark-bg, $amount: 30);
+  // background-color: darken($color: #180cff, $amount: 24);
+
+  background-color: darken($color: $accent, $amount: 24);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -21,14 +25,14 @@
   }
 }
 
-.About__section-grid {
+.Projects__section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   margin-inline: 10px;
 }
 
-.About__section-content-left {
+.Projects__section-content-left {
   width: 80%;
   h1 {
     color: $dark-bg;
@@ -37,12 +41,13 @@
     margin-bottom: 8px;
   }
   p {
-    color: $dark-bg;
+    // color: $dark-bg;
+    color: black;
     // color: $dark-mode-text;
   }
 }
 
-.About__section-content-right {
+.Projects__section-content-right {
   width: 35%;
   max-height: 90%;
 

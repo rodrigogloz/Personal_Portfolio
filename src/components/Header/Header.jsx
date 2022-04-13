@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <section className="header__nav-container">
         <nav className="header__nav glass">
-          <a className="tag-logo font-subtitle" href="#">
+          <a className="tag-logo font-subtitle gradient-text" href="#">
             &lt;/&gt;
           </a>
           <ul className="header__nav-ul ">

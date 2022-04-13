@@ -129,12 +129,17 @@ ul {
 
 // Gradient effect:
 
-.gradient {
+.gradient-text {
   background: -webkit-linear-gradient(
     45deg,
     rgb(192, 2, 255),
     rgb(24, 12, 255)
   );
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-div {
+  background: -webkit-linear-gradient(45deg, rgb(192, 2, 255), #180cff);
   -webkit-text-fill-color: transparent;
 }

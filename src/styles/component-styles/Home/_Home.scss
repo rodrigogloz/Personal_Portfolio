@@ -1,5 +1,5 @@
 .home__section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   // background-image: url(../../../assets/imagen-cover-provisional.jpg);
   // background-attachment: fixed;
@@ -54,15 +54,6 @@
   }
   p {
     color: white;
-  }
-  span {
-    background: -webkit-linear-gradient(
-      45deg,
-      rgb(192, 2, 255),
-      rgb(24, 12, 255)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 
