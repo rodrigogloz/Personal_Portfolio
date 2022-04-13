@@ -1,10 +1,8 @@
 .home__section {
   height: 100vh;
   width: 100vw;
-
   // background-image: url(../../../assets/imagen-cover-provisional.jpg);
   // background-attachment: fixed;
-
   // background-color: white;
 
   background-color: $dark-bg;
@@ -16,10 +14,63 @@
   place-items: center;
 }
 
-.home__section-content {
-  width: 35%;
+// .home__section-content {
+//   position: absolute;
+//   width: 35%;
+//   vertical-align: middle;
+//   display: table-cell;
+//   max-height: 90%;
 
-  display: table-cell;
+//   h1 {
+//     color: white;
+//     margin-bottom: 8px;
+//   }
+//   p {
+//     color: white;
+//   }
+// }
+
+.home__section-grid {
+  display: grid;
+  grid-template-columns: minmax(420px, 1fr) 1fr;
+  place-items: center;
+  margin-inline: 10px;
+}
+
+.home__section-content-left {
+  // position: absolute;
+  width: 80%;
+  // vertical-align: middle;
+  // display: table-cell;
+  // max-height: 90%;
+
+  h1 {
+    color: white;
+    margin-bottom: 16px;
+  }
+  hr {
+    margin-bottom: 20px;
+    border: 1px solid white;
+  }
+  p {
+    color: white;
+  }
+  span {
+    background: -webkit-linear-gradient(
+      45deg,
+      rgb(192, 2, 255),
+      rgb(24, 12, 255)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.home__section-content-right {
+  // position: absolute;
+  width: 35%;
+  // vertical-align: middle;
+  // display: table-cell;
   max-height: 90%;
 
   h1 {

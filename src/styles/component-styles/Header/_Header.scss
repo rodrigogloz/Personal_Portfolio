@@ -9,6 +9,7 @@
 header {
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 
 .header__nav {
@@ -20,18 +21,25 @@ header {
 }
 
 .tag-logo {
+  cursor: pointer;
   text-align: center;
   font-size: 26px;
   align-self: center;
   padding: 0 10px 1px 10px;
   font-weight: 400;
   // filter: drop-shadow(-2px 2px 0px $accent);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(192, 2, 255),
+    rgb(24, 12, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__nav-ul {
   display: flex;
   gap: 1.5rem;
-  height: 100%;
 
   span {
     color: white;
@@ -41,7 +49,7 @@ header {
 
 .header__nav-a {
   color: darken($color: white, $amount: 30);
-  padding: 14px;
+  padding: 12px;
   transition: color 0.8s ease;
 
   > span {

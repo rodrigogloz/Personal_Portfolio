@@ -8,3 +8,34 @@
   display: grid;
   place-items: center;
 }
+
+.About__section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-inline: 10px;
+}
+
+.About__section-content-left {
+  width: 80%;
+  h1 {
+    color: $dark-bg;
+    margin-bottom: 8px;
+  }
+  p {
+    color: $dark-bg;
+  }
+}
+
+.About__section-content-right {
+  width: 35%;
+  max-height: 90%;
+
+  h1 {
+    color: $dark-bg;
+    margin-bottom: 8px;
+  }
+  p {
+    color: $dark-bg;
+  }
+}
