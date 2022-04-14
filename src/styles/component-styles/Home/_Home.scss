@@ -38,7 +38,6 @@
 }
 
 .home__section-content-left {
-  // position: absolute;
   width: 80%;
   // vertical-align: middle;
   // display: table-cell;
@@ -50,6 +49,7 @@
   }
   hr {
     margin-bottom: 20px;
+    background-color: white;
     border: 1px solid white;
   }
   p {
@@ -58,17 +58,15 @@
 }
 
 .home__section-content-right {
-  // position: absolute;
-  width: 35%;
-  // vertical-align: middle;
-  // display: table-cell;
+  width: 100%;
   max-height: 90%;
 
-  h1 {
-    color: white;
-    margin-bottom: 8px;
-  }
-  p {
-    color: white;
+  :nth-child(1) {
+    width: 420px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50px 0 0 50px;
+    right: 0px;
+    position: absolute;
   }
 }

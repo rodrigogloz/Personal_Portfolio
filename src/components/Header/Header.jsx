@@ -1,18 +1,25 @@
 import React from "react";
+import { ScrollIndicator } from "../Utils/ScrollIndicator";
 
 export const Header = () => {
   return (
     <header>
-      <section className="header__nav-container">
-        <nav className="header__nav glass">
-          <a className="tag-logo font-subtitle gradient-text" href="#">
+      <div className="Header__top-bar">
+        <div>Yese & wese</div>
+        <div>Kiarton</div>
+      </div>
+      <section className="Header__nav-container">
+        <ScrollIndicator />
+
+        <nav className="Header__nav glass">
+          <a className="tag-logo font-subtitle gradient-text" href="#home">
             &lt;/&gt;
           </a>
-          <ul className="header__nav-ul ">
+          <ul className="Header__nav-ul ">
             <li>
               <a
                 href="#home"
-                className="header__nav-a hover-underline font-subtitle"
+                className="Header__nav-a hover-underline font-subtitle"
               >
                 <span aria-hidden="true">00</span>
                 Inicio
@@ -21,7 +28,7 @@ export const Header = () => {
             <li>
               <a
                 href="#about"
-                className="header__nav-a hover-underline font-subtitle"
+                className="Header__nav-a hover-underline font-subtitle"
               >
                 <span aria-hidden="true">01</span>
                 Sobre mí
@@ -30,7 +37,7 @@ export const Header = () => {
             <li>
               <a
                 href="#projects"
-                className="header__nav-a hover-underline font-subtitle"
+                className="Header__nav-a hover-underline font-subtitle"
               >
                 <span aria-hidden="true">02</span>
                 Proyectos
@@ -39,7 +46,7 @@ export const Header = () => {
             <li>
               <a
                 href="#contact"
-                className="header__nav-a hover-underline font-subtitle"
+                className="Header__nav-a hover-underline font-subtitle"
               >
                 <span aria-hidden="true">03</span>
                 Contacto

@@ -10,7 +10,7 @@ import { Footer } from "./Footer/Footer";
 export const MainApp = () => {
   return (
     <>
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
       <Header />
       <Home />
       <About />

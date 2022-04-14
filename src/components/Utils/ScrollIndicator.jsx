@@ -18,7 +18,10 @@ export const ScrollIndicator = () => {
 
   return (
     <div className="progress-container">
-      <div className="progress-bar" style={{ width: `${scroll}%` }}></div>
+      <div
+        className="progress-bar gradient-div"
+        style={{ width: `${scroll}%` }}
+      ></div>
     </div>
   );
 };
