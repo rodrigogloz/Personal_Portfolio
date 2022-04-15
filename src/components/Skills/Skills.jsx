@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Skills = () => {
+  const options = {
+    rootMargin: "0px",
+    threshold: 1.0,
+    target: ".Skills__section-grid",
+  };
+
+  const isIntersecting = useIntersectionObserver(options);
+
+  useEffect(() => {
+    const number = document.querySelector(".Skills__number");
+    if (isIntersecting) {
+      number.classList.add("active");
+    } else {
+      number.classList.remove("active");
+    }
+  }, [isIntersecting]);
+
   return (
     <>
       <div className="Skills__gradient-background"></div>
