@@ -25,6 +25,7 @@
 }
 
 .Header__nav {
+  height: 40px;
   padding: 0 1% 0 1%;
   margin-top: 5px;
   display: flex;
@@ -54,7 +55,10 @@
 
 .Header__nav-a {
   color: darken($color: white, $amount: 30);
-  padding: 12px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  height: 100%;
   transition: color 0.8s ease;
 
   > span {
@@ -65,28 +69,27 @@
     color: white;
     transition: color 0.1s ease;
   }
-}
 
-.hover-underline {
-  display: inline-block;
-  position: relative;
+  &.hover-underline {
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    background-color: $accent;
-    transform-origin: bottom left;
-    transition: transform 0.4s ease-out;
-  }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 5px;
+      bottom: 0;
+      left: 0;
+      background-color: $accent;
+      transform-origin: bottom left;
+      transition: transform 0.4s ease-out;
+    }
 
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    transition: transform 0.3s ease-out;
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      transition: transform 0.3s ease-out;
+    }
   }
 }
