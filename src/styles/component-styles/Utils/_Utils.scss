@@ -7,7 +7,7 @@
   opacity: 90%;
   display: block;
   position: fixed;
-  z-index: 99;
+  z-index: 0;
 }
 
 .progress-bar {
@@ -17,6 +17,7 @@
   width: 0px;
   position: absolute;
   opacity: 80%;
+  // top: 26px;
 }
 
 //

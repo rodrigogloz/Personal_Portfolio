@@ -4,10 +4,6 @@ import { ScrollIndicator } from "../Utils/ScrollIndicator";
 export const Header = () => {
   return (
     <header>
-      <div className="Header__top-bar">
-        <div>Yese & wese</div>
-        <div>Kiarton</div>
-      </div>
       <section className="Header__nav-container">
         <ScrollIndicator />
 
@@ -36,11 +32,20 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="#projects"
+                href="#skills"
                 className="Header__nav-a hover-underline font-subtitle"
               >
                 <span aria-hidden="true">02</span>
-                Proyectos
+                Competencias
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="Header__nav-a hover-underline font-subtitle"
+              >
+                <span aria-hidden="true">03</span>
+                Portfolio
               </a>
             </li>
             <li>
@@ -48,7 +53,7 @@ export const Header = () => {
                 href="#contact"
                 className="Header__nav-a hover-underline font-subtitle"
               >
-                <span aria-hidden="true">03</span>
+                <span aria-hidden="true">04</span>
                 Contacto
               </a>
             </li>

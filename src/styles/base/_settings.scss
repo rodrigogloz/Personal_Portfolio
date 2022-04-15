@@ -1,9 +1,13 @@
 // Partials:
 
-$dark-bg: #111111;
+$dark-bg: darken(
+  $color: white,
+  $amount: 92,
+);
 $grey: #82828a;
 // $accent: #2d62cc;
-$accent: #4209ff;
+$accent: #4e21fe;
+// $accent: #5450f7;
 
 $dark-blue: #111827;
 

@@ -14,16 +14,26 @@ html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 a {
   text-decoration: none;
 }
 
 ul {
   list-style: none;
+}
+
+hr {
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+p {
+  font-size: 16px;
 }
 
 // Scrollbar styles:
@@ -77,6 +87,15 @@ ul {
 .font-p {
   color: white;
   font-size: 12px;
+}
+
+// Generic classes:
+
+.separator {
+  width: 24vw;
+  height: 8px;
+  border-radius: 6px;
+  transform: translateY(67px);
 }
 
 // Typewritter effect:

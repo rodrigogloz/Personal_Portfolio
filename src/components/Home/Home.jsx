@@ -11,7 +11,7 @@ export const Home = () => {
             Me llamo Rodrigo y soy desarrollador{" "}
             <span className="gradient-text">Front-End</span>.
           </h1>
-          <hr className="separator" />
+          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero
             eveniet quis aliquam cum vitae odit id aperiam unde sequi fuga

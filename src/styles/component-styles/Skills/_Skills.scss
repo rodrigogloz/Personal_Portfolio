@@ -1,10 +1,12 @@
-.Contact__gradient-background {
+.Skills__gradient-background {
   min-height: 6vh;
   background-attachment: fixed;
   background-color: rgb(53, 53, 53);
   //   background-image: url(../../../assets/imagen-prueba.jpg);
 
   background-image: -webkit-linear-gradient(65deg, rgb(162, 62, 255), #180cff);
+
+  //   background-image: -webkit-linear-gradient(65deg, rgb(162, 62, 255), #222222);
 
   //   background-image: -webkit-linear-gradient(75deg, rgb(0, 0, 0), #180cff);
 
@@ -19,14 +21,12 @@
   color: white;
 }
 
-.Contact__section {
-  // min-height: calc(75vh - 53px);
-  min-height: 80vh;
+.Skills__section {
+  min-height: 100vh;
   width: 100vw;
 
-  // background-color: lighten($color: $dark-bg, $amount: 30);
-  background-color: white;
-  // background-color: $dark-mode-bg;
+  //   background-color: darken($color: white, $amount: 75);
+  background-color: $dark-bg;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -37,28 +37,37 @@
   grid-template-rows: 0px auto;
 }
 
-.Contact__section-grid {
+.Skills__section:hover .Skills__number {
+  transform: translateY(-70px);
+  opacity: 0.2;
+}
+
+.Skills__section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
   margin-inline: 10px;
 }
 
-.Contact__section-content-left {
+.Skills__section-content-left {
   width: 80%;
-  h1 {
-    color: $dark-bg;
-    // color: $dark-mode-text;
+  overflow: hidden;
 
-    margin-bottom: 8px;
+  h1 {
+    // color: $dark-bg;
+    // color: $dark-mode-text;
+    color: white;
+
+    margin-bottom: 16px;
   }
   p {
-    color: $dark-bg;
+    // color: $dark-bg;
     // color: $dark-mode-text;
+    color: white;
   }
 }
 
-.Contact__section-content-right {
+.Skills__section-content-right {
   width: 35%;
   max-height: 90%;
 
@@ -70,3 +79,19 @@
     color: $dark-bg;
   }
 }
+
+.Skills__number {
+  position: relative;
+  //   left: 30px;
+  top: 170px;
+  font-size: 240px;
+  font-weight: 600;
+  color: #9d9d9d;
+  opacity: 0.1;
+  transition: 1s;
+  z-index: 0;
+}
+
+// .Skills__number:hover {
+//   transform: translateY(-70px);
+// }

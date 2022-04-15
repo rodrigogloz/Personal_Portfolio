@@ -1,14 +1,15 @@
 import React from "react";
 
-export const Projects = () => {
+export const Skills = () => {
   return (
     <>
-      <div className="Projects__gradient-background" />
-      <div className="Projects__section" id="projects">
+      <div className="Skills__gradient-background"></div>
+      <div className="Skills__section" id="skills">
         <span className="gradient-div separator" />
-        <div className="Projects__section-grid">
-          <div className="Projects__section-content-left">
-            <h1 className="gradient-text">Portfolio</h1>
+        <div className="Skills__section-grid">
+          <div className="Skills__section-content-left">
+            <h2 className="Skills__number">02</h2>
+            <h1 className="gradient-text">Competencias</h1>
             <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
@@ -17,7 +18,7 @@ export const Projects = () => {
               perspiciatis.
             </p>
           </div>
-          <div className="Projects__section-content-right"></div>
+          <div className="Skills__section-content-right"></div>
         </div>
       </div>
     </>
