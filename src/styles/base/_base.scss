@@ -92,10 +92,11 @@ p {
 // Generic classes:
 
 .separator {
-  width: 24vw;
+  position: absolute;
+  width: 25vw;
   height: 8px;
   border-radius: 6px;
-  transform: translateY(67px);
+  top: 67px;
 }
 
 // Typewritter effect:

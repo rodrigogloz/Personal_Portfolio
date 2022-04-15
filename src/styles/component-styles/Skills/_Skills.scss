@@ -24,22 +24,13 @@
 .Skills__section {
   min-height: 100vh;
   width: 100vw;
-
-  //   background-color: darken($color: white, $amount: 75);
+  position: relative;
   background-color: $dark-bg;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   place-items: center;
-
-  grid-template-rows: 0px auto;
-}
-
-.Skills__section:hover .Skills__number {
-  transform: translateY(-70px);
-  opacity: 0.2;
 }
 
 .Skills__section-grid {
@@ -81,17 +72,19 @@
 }
 
 .Skills__number {
-  position: relative;
-  //   left: 30px;
-  top: 170px;
+  position: absolute;
+  transform: translateY(-70px);
+
+  top: 35%;
   font-size: 240px;
   font-weight: 600;
   color: #9d9d9d;
   opacity: 0.1;
   transition: 1s;
   z-index: 0;
-}
 
-// .Skills__number:hover {
-//   transform: translateY(-70px);
-// }
+  &.active {
+    transform: translateY(-50%);
+    opacity: 0.2;
+  }
+}

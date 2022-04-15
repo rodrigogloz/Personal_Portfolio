@@ -36,8 +36,7 @@
   background-size: cover;
   display: grid;
   place-items: center;
-
-  grid-template-rows: 0px auto;
+  position: relative;
 }
 
 .About__section-grid {
