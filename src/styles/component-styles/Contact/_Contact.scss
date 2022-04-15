@@ -2,11 +2,8 @@
   min-height: 6vh;
   background-attachment: fixed;
   background-color: rgb(53, 53, 53);
-  //   background-image: url(../../../assets/imagen-prueba.jpg);
 
   background-image: -webkit-linear-gradient(65deg, rgb(162, 62, 255), #180cff);
-
-  //   background-image: -webkit-linear-gradient(75deg, rgb(0, 0, 0), #180cff);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -20,20 +17,28 @@
 }
 
 .Contact__section {
-  // min-height: calc(75vh - 53px);
   min-height: 80vh;
   width: 100vw;
-
-  // background-color: lighten($color: $dark-bg, $amount: 30);
   background-color: white;
-  // background-color: $dark-mode-bg;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   place-items: center;
   position: relative;
+
+  background-attachment: fixed;
+  background-color: rgb(53, 53, 53);
+
+  background-image: -webkit-linear-gradient(65deg, rgb(162, 62, 255), #180cff);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .separator {
+    background-color: white;
+  }
 }
 
 .Contact__section-grid {
@@ -46,13 +51,13 @@
 .Contact__section-content-left {
   width: 80%;
   h1 {
-    color: $dark-bg;
+    color: white;
     // color: $dark-mode-text;
 
     margin-bottom: 8px;
   }
   p {
-    color: $dark-bg;
+    color: white;
     // color: $dark-mode-text;
   }
 }

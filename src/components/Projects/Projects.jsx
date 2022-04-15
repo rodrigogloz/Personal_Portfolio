@@ -9,7 +9,6 @@ export const Projects = () => {
         <div className="Projects__section-grid">
           <div className="Projects__section-content-left">
             <h1 className="gradient-text">Portfolio</h1>
-            <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
               vero eveniet quis aliquam cum vitae odit id aperiam unde sequi

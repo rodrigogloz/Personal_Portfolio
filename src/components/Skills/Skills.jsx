@@ -28,7 +28,7 @@ export const Skills = () => {
           <div className="Skills__section-content-left">
             <h2 className="Skills__number">02</h2>
             <h1 className="gradient-text">Competencias</h1>
-            <hr />
+
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
               vero eveniet quis aliquam cum vitae odit id aperiam unde sequi

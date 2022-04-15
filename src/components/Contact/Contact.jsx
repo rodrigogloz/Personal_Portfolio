@@ -3,9 +3,8 @@ import React from "react";
 export const Contact = () => {
   return (
     <>
-      <div className="Contact__gradient-background"></div>
       <div className="Contact__section" id="contact">
-        <span className="gradient-div separator" />
+        <span className="separator" />
         <div className="Contact__section-grid">
           <div className="Contact__section-content-left">
             <h1>Contacto</h1>
