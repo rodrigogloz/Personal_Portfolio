@@ -1,0 +1,117 @@
+.Header__nav-container {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.Header__nav {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding: 0 60px 0 60px;
+}
+
+.tag-logo {
+  align-self: center;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0 10px 1px 10px;
+  text-align: center;
+}
+
+.Header__nav-ul {
+  display: flex;
+  gap: 2rem;
+
+  span {
+    color: white;
+    font-weight: 400;
+  }
+}
+
+.Header__nav-a {
+  align-items: center;
+  color: darken($color: white, $amount: 50);
+  display: flex;
+  height: 100%;
+  padding: 0 12px;
+  transition: color 0.8s ease;
+
+  > span {
+    margin-right: 8px;
+    color: black;
+    transition: 1s;
+  }
+
+  &.active {
+    color: black;
+    position: relative;
+  }
+
+  &:hover {
+    color: black;
+    transition: color 0.1s ease;
+  }
+
+  &.hover-underline {
+    position: relative;
+
+    &::after {
+      background-image: $gradient;
+      bottom: 0;
+      content: "";
+      height: 5px;
+      left: 0;
+      position: absolute;
+      transform-origin: bottom left;
+      transform: scaleX(0);
+      transition: transform 0.4s ease-out;
+      width: 100%;
+    }
+
+    &:hover::after,
+    &.active::after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+      transition: transform 0.3s ease-out;
+    }
+  }
+}
+
+.dark .Header__nav-a {
+  color: darken($color: white, $amount: 30);
+
+  > span {
+    color: white;
+  }
+
+  &.active {
+    color: white;
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.glass .Header__nav-a {
+  color: darken($color: white, $amount: 30);
+
+  > span {
+    margin-right: 8px;
+    color: white;
+    transition: 1s;
+  }
+
+  &.active {
+    color: white;
+    position: relative;
+  }
+
+  &:hover {
+    color: white;
+    transition: color 0.1s ease;
+  }
+}

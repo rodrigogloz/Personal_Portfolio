@@ -1,0 +1,115 @@
+.Contact__section {
+  align-items: flex-start;
+  background-attachment: fixed;
+  // background-color: $dark-bg;
+  // background-image: $gradient;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+
+  .separator {
+    background-color: white;
+  }
+}
+
+.Contact__section-grid {
+  margin: 10vh 20px;
+  max-width: 68rem;
+  min-height: 50vh;
+}
+
+.Contact__section-header {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 1rem;
+    margin-top: 10rem;
+    color: $gradient;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.Contact__section-form-container {
+  form {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+
+    input,
+    textarea {
+      // opacity: 10%;
+      padding: 0.5rem;
+      // backdrop-filter: blur(10px);
+      resize: none;
+      outline: none;
+      border-style: none;
+      border: 1px solid $translucid-grey;
+
+      transition: 0.2s;
+
+      &:focus {
+        // outline: 2px solid white;
+
+        // border-block: 2px solid white;
+
+        outline-offset: 2px;
+
+        box-shadow: 0 4px 0px -2px $accent;
+      }
+    }
+
+    :first-child {
+      width: calc(50% - 8px);
+      height: fit-content;
+      margin-bottom: 1rem;
+    }
+
+    :nth-child(2) {
+      width: calc(50% - 8px);
+      margin-left: auto;
+      height: fit-content;
+      margin-bottom: 1rem;
+    }
+
+    :nth-child(3) {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 1rem;
+    }
+
+    :nth-child(4) {
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 1rem;
+    }
+
+    :last-child {
+      width: 100%;
+      display: flex;
+
+      > input {
+        cursor: pointer;
+        margin-left: auto;
+        width: fit-content;
+        height: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        opacity: 100%;
+      }
+    }
+  }
+}

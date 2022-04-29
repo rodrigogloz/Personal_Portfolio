@@ -3,7 +3,7 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Skills = () => {
   const options = {
-    rootMargin: "0px",
+    rootMargin: "120px",
     threshold: 1.0,
     target: ".Skills__section-grid",
   };
@@ -21,14 +21,16 @@ export const Skills = () => {
 
   return (
     <>
-      <div className="Skills__gradient-background"></div>
-      <div className="Skills__section" id="skills">
+      <section className="Skills__section" id="skills">
         <span className="gradient-div separator" />
         <div className="Skills__section-grid">
           <div className="Skills__section-content-left">
-            <h2 className="Skills__number">02</h2>
-            <h1 className="gradient-text">Competencias</h1>
-
+            <h2 className="big-number Skills__number" aria-hidden="true">
+              02
+            </h2>
+            <h1>
+              <span className="gradient-text">Competencias</span>
+            </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
               vero eveniet quis aliquam cum vitae odit id aperiam unde sequi
@@ -38,7 +40,7 @@ export const Skills = () => {
           </div>
           <div className="Skills__section-content-right"></div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

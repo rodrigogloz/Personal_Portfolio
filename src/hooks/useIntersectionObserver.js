@@ -5,7 +5,7 @@ export const useIntersectionObserver = (options) => {
 
   useEffect(() => {
     const selector = document.querySelector(options.target);
-    var callback = function (entries, observer) {
+    let callback = function (entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setisIntersecting(true);

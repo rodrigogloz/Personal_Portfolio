@@ -2,26 +2,30 @@ import React from "react";
 
 export const Home = () => {
   return (
-    <div className="home__section" id="home">
-      <div className="home__section-grid">
-        <div className="home__section-content-left">
-          <h1>
-            Bienvenid@.
-            <br />
-            Me llamo Rodrigo y soy desarrollador{" "}
-            <span className="gradient-text">Front-End</span>.
-          </h1>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero
-            eveniet quis aliquam cum vitae odit id aperiam unde sequi fuga
-            mollitia at delectus.
-          </p>
-        </div>
-        <div className="home__section-content-right">
-          <div className="gradient-div"></div>
+    <section className="home__section" id="home">
+      <div className="home__section-gradient">
+        <div className="home__section-grid">
+          <div className="home__section-content-left">
+            <h1>
+              Bienvenid@.
+              <br />
+              Me llamo Rodrigo,
+              <br />y soy desarrollador
+              <span className="gradient-text line"> Front-End</span>.
+            </h1>
+            {/* <hr /> */}
+            <p>
+              En esta página encontrarás información sobre mí y sobre mis
+              proyectos como desarrollador web.
+              <br />
+              Para cualquier duda o solicitud, no dudes en contactarme.
+            </p>
+          </div>
+          <div className="home__section-content-right"></div>
         </div>
       </div>
-    </div>
+
+      <div className="transparent-div"></div>
+    </section>
   );
 };

@@ -1,0 +1,18 @@
+// Partials:
+
+@import "./settings";
+
+// General styles and classes:
+
+@import "./base";
+
+// Component styles:
+
+@import "./components/Utils/Utils";
+@import "./components/Header/Header";
+@import "./components/Home/Home";
+@import "./components/About/About";
+@import "./components/Projects/Projects";
+@import "./components/Contact/Contact";
+@import "./components/Footer/Footer";
+@import "./components/Skills/Skills";

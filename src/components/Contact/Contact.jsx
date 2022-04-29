@@ -1,23 +1,88 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Contact = () => {
+  const options = {
+    rootMargin: "180px",
+    threshold: 1.0,
+    target: ".Contact__section-grid",
+  };
+
+  const isIntersecting = useIntersectionObserver(options);
+
+  useEffect(() => {
+    const number = document.querySelector(".Contact__number");
+    if (isIntersecting) {
+      number.classList.add("active");
+    } else {
+      number.classList.remove("active");
+    }
+  }, [isIntersecting]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
-      <div className="Contact__section" id="contact">
+      <section className="Contact__section" id="contact">
         <span className="separator" />
         <div className="Contact__section-grid">
-          <div className="Contact__section-content-left">
-            <h1>Contacto</h1>
+          <div className="Contact__section-header">
+            <h2 className="big-number Contact__number" aria-hidden="true">
+              04
+            </h2>
+            <h1>
+              <span>Contacto</span>
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              vero eveniet quis aliquam cum vitae odit id aperiam unde sequi
-              fuga mollitia at delectus, nostrum necessitatibus ex sunt amet
-              perspiciatis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Sit quaerat
+              repudiandae obcaecati aliquid placeat, voluptas tenetur et
+              reiciendis nostrum.
             </p>
           </div>
-          <div className="Contact__section-content-right"></div>
+          <div className="Contact__section-form-container">
+            <form autoComplete="none" action="">
+              <input
+                autoComplete="none"
+                type="text"
+                name="name"
+                className="glass"
+                placeholder="Nombre"
+              />
+              <input
+                autoComplete="none"
+                type="email"
+                name="email"
+                className="glass"
+                placeholder="Correo electrónico"
+              />
+              <input
+                autoComplete="none"
+                type="subject"
+                name="subject"
+                className="glass"
+                placeholder="Asunto"
+              />
+              <textarea
+                name="message"
+                cols="30"
+                rows="8"
+                className="glass form-message"
+                placeholder="Escribe aquí tu mensaje"
+              />
+              <div className="form-button">
+                <input
+                  type="submit"
+                  value="Enviar mensaje"
+                  onClick={handleSubmit}
+                />
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
