@@ -11,19 +11,9 @@
 }
 
 .Projects__section-grid {
-  // display: grid;
-  // display: flex;
-  // flex-wrap: wrap;
-  // gap: 3rem;
-  // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  // margin-block: 20vh;
-  margin: 20vh 20px;
+  margin: 10vh 20px;
   max-width: 68rem;
   min-height: 50vh;
-
-  > :last-child {
-    // border-bottom: 1px solid gray;
-  }
 }
 
 .Projects__section-header {
@@ -32,7 +22,6 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  // grid-column: 1 / -1;
 
   h1 {
     margin-bottom: 1rem;
@@ -97,7 +86,7 @@
 
       button {
         cursor: pointer;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1.5rem;
         margin-left: auto;
         color: lighten($color: black, $amount: 40);
         border: solid 2px transparent;

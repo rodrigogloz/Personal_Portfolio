@@ -20,7 +20,8 @@
 }
 
 .Contact__section-grid {
-  margin: 10vh 20px;
+  // margin-top: 10vh;
+  margin: 10vh 20px 40px 20px;
   max-width: 68rem;
   min-height: 50vh;
 }
@@ -39,7 +40,7 @@
   }
 
   p {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -51,64 +52,73 @@
 
     input,
     textarea {
-      // opacity: 10%;
       padding: 0.5rem;
-      // backdrop-filter: blur(10px);
       resize: none;
       outline: none;
       border-style: none;
-      border: 1px solid $translucid-grey;
+      border: 2px solid $translucid-grey;
+      width: 100%;
+      margin-bottom: 1rem;
 
       transition: 0.2s;
 
       &:focus {
-        // outline: 2px solid white;
-
-        // border-block: 2px solid white;
-
         outline-offset: 2px;
-
-        box-shadow: 0 4px 0px -2px $accent;
+        box-shadow: 0 6px 0px -2px $accent;
       }
     }
 
     :first-child {
-      width: calc(50% - 8px);
+      width: calc(50% - 0.5rem);
       height: fit-content;
-      margin-bottom: 1rem;
     }
 
     :nth-child(2) {
-      width: calc(50% - 8px);
+      width: calc(50% - 0.5rem);
       margin-left: auto;
       height: fit-content;
-      margin-bottom: 1rem;
     }
 
     :nth-child(3) {
       width: 100%;
       height: fit-content;
-      margin-bottom: 1rem;
     }
 
     :nth-child(4) {
       width: 100%;
       height: fit-content;
-      margin-bottom: 1rem;
     }
 
-    :last-child {
+    :nth-child(5) {
       width: 100%;
       display: flex;
 
+      span {
+        color: red;
+        font-family: "inter";
+        font-size: 1.25rem;
+      }
+
+      p {
+        color: grey;
+        font-size: 1rem;
+      }
+
       > input {
         cursor: pointer;
-        margin-left: auto;
         width: fit-content;
         height: fit-content;
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.3rem;
+        border-style: none;
         opacity: 100%;
+        color: white;
+
+        background-image: $gradient;
+
+        &:focus {
+          box-shadow: none;
+        }
       }
     }
   }

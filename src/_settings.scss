@@ -6,12 +6,22 @@ $dark-bg: darken(
   $color: white,
   $amount: 94,
 );
+// $gradient: -webkit-linear-gradient(
+//   35deg,
+//   rgb(0, 183, 255),
+//   rgba(29, 38, 253, 1),
+//   rgb(84, 50, 207)
+// );
+
 $gradient: -webkit-linear-gradient(
   35deg,
   rgb(0, 183, 255),
-  // rgba(29, 38, 253, 1),
-  rgb(84, 50, 207)
+  rgb(72, 77, 236),
+  rgb(98, 45, 221)
 );
+
 $translucid-grey: rgba(128, 128, 128, 0.3);
 
-$gradient: rgb(74, 54, 220);
+// $gradient: rgb(74, 54, 220);
+
+// $gradient: rgb(73, 73, 220);

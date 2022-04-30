@@ -3,35 +3,33 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export const DarkModeSwitch = () => {
-  const [activeButton, setActiveButton] = useState(true);
   const themeSwitch = useRef();
+  const [theme, setTheme] = useState(localStorage.getItem("theme"));
 
-  let theme;
-
-  if (localStorage) {
-    theme = localStorage.getItem("theme");
-  }
-
-  if (theme === undefined || theme === "dark") {
-    document.body.classList.add(theme);
-  }
+  useEffect(() => {
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+    }
+  }, []);
 
   const handleClick = () => {
-    const darkMode = themeSwitch.current;
-    document.body.classList.toggle("dark");
-    setActiveButton(!activeButton);
-
-    if (activeButton === true) {
-      darkMode.classList.add("active");
-      localStorage.setItem("theme", "dark");
-    } else {
-      darkMode.classList.remove("active");
+    if (theme === "dark") {
+      document.body.classList.remove("dark");
+      setTheme("light");
       localStorage.setItem("theme", "light");
+    } else {
+      document.body.classList.add("dark");
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
     }
   };
 
   return (
-    <button className="themeSwitch" onClick={handleClick} ref={themeSwitch}>
+    <button
+      className={`themeSwitch ${theme === "dark" ? "dark" : ""}`}
+      onClick={handleClick}
+      ref={themeSwitch}
+    >
       <span>
         <FontAwesomeIcon icon={faSun}></FontAwesomeIcon>
       </span>

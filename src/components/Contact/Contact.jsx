@@ -33,7 +33,7 @@ export const Contact = () => {
               04
             </h2>
             <h1>
-              <span>Contacto</span>
+              <span className="gradient-text">Contacto</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
@@ -68,12 +68,18 @@ export const Contact = () => {
               <textarea
                 name="message"
                 cols="30"
-                rows="8"
+                rows="7"
                 className="glass form-message"
                 placeholder="Escribe aquí tu mensaje"
               />
-              <div className="form-button">
+              <div className="form-bottom">
+                <div>
+                  <p>
+                    <span>*</span> campo requerido
+                  </p>
+                </div>
                 <input
+                  // className="gradient-div"
                   type="submit"
                   value="Enviar mensaje"
                   onClick={handleSubmit}

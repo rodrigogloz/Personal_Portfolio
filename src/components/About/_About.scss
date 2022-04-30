@@ -1,18 +1,3 @@
-// .About__gradient-background {
-//   align-items: center;
-//   background-attachment: fixed;
-//   background-color: rgb(53, 53, 53);
-//   background-image: $gradient;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   border-radius: 0;
-//   color: white;
-//   display: flex;
-//   justify-content: center;
-//   min-height: 8px;
-// }
-
 .About__section {
   align-items: flex-start;
   background-position: center;
@@ -29,8 +14,7 @@
   align-self: flex-start;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20vh 20px;
-  margin-top: 20vh;
+  margin: 10vh 20px;
   max-width: 68rem;
   min-height: 50vh;
 }

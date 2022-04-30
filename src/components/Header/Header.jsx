@@ -47,7 +47,7 @@ export const Header = () => {
 
         <nav className="Header__nav" ref={headerNavRef}>
           <a className="tag-logo font-subtitle gradient-text" href="#home">
-            &lt; Rodrigo Gloz /&gt;
+            &lt; <span className="">Rodrigo Gloz</span> /&gt;
           </a>
           <ul className="Header__nav-ul">
             <li>

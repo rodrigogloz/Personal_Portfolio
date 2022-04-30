@@ -6,13 +6,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 60px;
+  padding: 2rem 60px 1rem 60px;
 
   > * {
   }
 
   .Footer__social {
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -51,6 +51,7 @@
   }
 
   .Footer__copyright {
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: grey;
   }
