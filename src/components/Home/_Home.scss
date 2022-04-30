@@ -1,10 +1,9 @@
 .home__section {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
   justify-content: center;
   position: relative;
 
@@ -27,11 +26,11 @@
 
 .home__section-gradient {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
+  display: flex;
   justify-content: center;
   position: relative;
   background-image: linear-gradient(
