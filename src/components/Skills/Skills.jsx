@@ -95,6 +95,48 @@ export const Skills = () => {
                 <div class="slide">
                   <img src={logoGitHub} alt="" />
                 </div>
+                <div class="slide">
+                  <img src={logoHTML} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoCSS} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoJS} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoReact} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoRedux} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoSass} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoMongoDB} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoFirebase} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoVSCode} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoLinux} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoNPM} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoJest} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoGit} alt="" />
+                </div>
+                <div class="slide">
+                  <img src={logoGitHub} alt="" />
+                </div>
               </div>
             </div>
           </div>
