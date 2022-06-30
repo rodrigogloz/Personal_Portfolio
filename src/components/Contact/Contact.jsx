@@ -3,9 +3,9 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Contact = () => {
   const options = {
-    rootMargin: "180px",
+    rootMargin: "120px",
     threshold: 1.0,
-    target: ".Contact__section-grid",
+    target: ".Contact__number",
   };
 
   const isIntersecting = useIntersectionObserver(options);
@@ -26,9 +26,9 @@ export const Contact = () => {
   return (
     <>
       <section className="Contact__section" id="contact">
-        <span className="separator" />
+        <span className="gradient-div separator" />
         <div className="Contact__section-grid">
-          <div className="Contact__section-header">
+          <div className="Contact__section-content-left">
             <h2 className="big-number Contact__number" aria-hidden="true">
               04
             </h2>
@@ -36,56 +36,56 @@ export const Contact = () => {
               <span className="gradient-text">Contacto</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Sit quaerat
-              repudiandae obcaecati aliquid placeat, voluptas tenetur et
-              reiciendis nostrum.
+              Ante cualquier duda o solicitud, no dudes en contactarme y
+              contestaré tan pronto como sea posible.
             </p>
           </div>
-          <div className="Contact__section-form-container">
-            <form autoComplete="none" action="">
-              <input
-                autoComplete="none"
-                type="text"
-                name="name"
-                className="glass"
-                placeholder="Nombre"
-              />
-              <input
-                autoComplete="none"
-                type="email"
-                name="email"
-                className="glass"
-                placeholder="Correo electrónico"
-              />
-              <input
-                autoComplete="none"
-                type="subject"
-                name="subject"
-                className="glass"
-                placeholder="Asunto"
-              />
-              <textarea
-                name="message"
-                cols="30"
-                rows="7"
-                className="glass form-message"
-                placeholder="Escribe aquí tu mensaje"
-              />
-              <div className="form-bottom">
-                <div>
-                  <p>
-                    <span>*</span> campo requerido
-                  </p>
-                </div>
+          <div className="Contact__section-content-right">
+            <div className="Contact__section-form-container">
+              <form autoComplete="none" action="">
                 <input
-                  // className="gradient-div"
-                  type="submit"
-                  value="Enviar mensaje"
-                  onClick={handleSubmit}
+                  autoComplete="none"
+                  type="text"
+                  name="name"
+                  className="glass"
+                  placeholder="Nombre"
                 />
-              </div>
-            </form>
+                <input
+                  autoComplete="none"
+                  type="email"
+                  name="email"
+                  className="glass"
+                  placeholder="Correo electrónico"
+                />
+                <input
+                  autoComplete="none"
+                  type="subject"
+                  name="subject"
+                  className="glass"
+                  placeholder="Asunto"
+                />
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="7"
+                  className="glass form-message"
+                  placeholder="Escribe aquí tu mensaje"
+                />
+                <div className="form-bottom">
+                  <div>
+                    <p>
+                      <span>*</span> campo requerido
+                    </p>
+                  </div>
+                  <input
+                    // className="gradient-div"
+                    type="submit"
+                    value="Enviar mensaje"
+                    onClick={handleSubmit}
+                  />
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

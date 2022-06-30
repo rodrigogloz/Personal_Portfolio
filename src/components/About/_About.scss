@@ -13,18 +13,25 @@
 .About__section-grid {
   align-self: flex-start;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 10vh 20px;
+  grid-template-columns: 5fr 3fr;
+  margin-block: 25vh;
+  margin-inline: $section-margin-inline;
   max-width: 68rem;
   min-height: 50vh;
+
+  gap: 10%;
 }
 
-.About__section-content-left {
+.About__section-content-right {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   height: 400px;
   position: relative;
+
+  > * {
+    overflow: hidden;
+  }
 
   h1 {
     margin-bottom: 1rem;
@@ -34,4 +41,10 @@
   p {
     margin-bottom: 6rem;
   }
+}
+
+.About__section-content-left {
+  display: flex;
+  align-items: center;
+  text-align: right;
 }

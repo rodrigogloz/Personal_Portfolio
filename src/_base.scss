@@ -5,6 +5,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400;500&display=swap");
 
+@font-face {
+  font-family: Monument;
+  src: url("./fonts/Monument/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: Neue Montreal;
+  src: url("./fonts/NeueMontreal/PPNeueMontreal-Medium.otf");
+}
+
 // General:
 
 *,
@@ -12,6 +22,13 @@
 *::before {
   font-family: "Inter", "Segoe UI", sans-serif;
   font-family: "Raleway", sans-serif;
+
+  // font-family: "Monument";
+
+  // font-family: "Neue Montreal";
+
+  // font-weight: 100 !important;
+
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -26,7 +43,7 @@ body {
   background-color: white;
   color: black;
 
-  transition: 1s;
+  // transition: 0.5s;
 
   animation: fadeInAnimation ease-in 2s;
   animation-iteration-count: 1;
@@ -36,7 +53,7 @@ body {
     background-color: $dark-bg;
     color: white;
 
-    transition: 1s;
+    // transition: 0.5s;
 
     animation: fadeInAnimation ease-in 2s;
     animation-iteration-count: 1;
@@ -66,10 +83,18 @@ ul {
 
 h1 {
   font-size: 3rem;
+
+  // font-family: "Monument";
+  // font-size: 2.5rem;
+  // font-weight: 100;
+}
+
+h3 {
+  // font-family: "Monument" !important;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -108,8 +133,13 @@ button {
 
 // Generic classes:
 
+.anchor {
+  // color: $anchor;
+  background: $gradient;
+}
+
 .inter {
-  font-family: "Inter";
+  font-family: "Raleway";
 }
 
 .separator {
@@ -127,7 +157,7 @@ button {
 
 .big-number {
   color: gray;
-  font-size: 240px;
+  font-size: 14rem;
   font-weight: 600;
   opacity: 0.05;
   position: absolute;
@@ -136,7 +166,7 @@ button {
   transition: 1s;
   z-index: -1;
 
-  font-family: "Inter";
+  font-family: "Raleway";
 
   &.active {
     opacity: 0.3;
@@ -144,59 +174,9 @@ button {
   }
 }
 
-// Typewriter effect:
-
-.typed-container {
-  display: inline-block;
-  width: fit-content;
-}
-
-.typed-text-end {
-  font-weight: 500;
-  font-family: "Azeret Mono", monospace;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 0.15em solid $accent;
-  animation: typing 2s steps(11) forwards, blink 0.8s infinite;
-}
-
-.typed-text {
-  // font-weight: 500;
-  // font-family: "Azeret Mono", monospace;
-  font-family: "Inter";
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 0.15em solid $accent;
-  animation: typing 1s steps(11) forwards, blink 0.8s infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  from {
-    border-color: transparent;
-  }
-  to {
-    border-color: $accent;
-  }
-}
-
-// Glassmorphism effect:
-
-.glass {
-  color: #ecf0f1;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  transition: 1s;
+.title-number {
+  color: grey;
+  margin-right: 1rem;
 }
 
 // Gradient effect:

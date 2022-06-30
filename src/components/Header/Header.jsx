@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { ScrollIndicator } from "../Utils/ScrollIndicator";
 import { DarkModeSwitch } from "../Utils/DarkModeSwitch";
+import ProgressBar from "./ProgressBar";
 
-export const Header = () => {
+export const Header = ({ referencia }) => {
   const sections = document.querySelectorAll("section");
   const navLi = document.querySelectorAll(".Header__nav-a");
 
@@ -43,14 +43,13 @@ export const Header = () => {
   return (
     <header>
       <div className="Header__nav-container">
-        <ScrollIndicator />
-
+        {/* <ProgressBar className="progress_bar" scrollRef={referencia} /> */}
         <nav className="Header__nav" ref={headerNavRef}>
           <a className="tag-logo font-subtitle gradient-text" href="#home">
             &lt; <span className="">Rodrigo Gloz</span> /&gt;
           </a>
           <ul className="Header__nav-ul">
-            <li>
+            {/* <li>
               <a
                 href="#home"
                 className="Header__nav-a hover-underline font-subtitle home"
@@ -60,7 +59,7 @@ export const Header = () => {
                 </span>
                 Inicio
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="#about"

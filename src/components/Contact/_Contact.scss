@@ -1,50 +1,60 @@
 .Contact__section {
   align-items: flex-start;
-  background-attachment: fixed;
-  // background-color: $dark-bg;
-  // background-image: $gradient;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  min-height: 100vh;
   justify-content: center;
-  overflow: hidden;
+  height: 100vh;
   position: relative;
   width: 100%;
-  z-index: 0;
-
-  .separator {
-    background-color: white;
-  }
+  overflow: hidden;
 }
 
 .Contact__section-grid {
-  // margin-top: 10vh;
-  margin: 10vh 20px 40px 20px;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin-block: 25vh;
+  margin-inline: $section-margin-inline;
   max-width: 68rem;
   min-height: 50vh;
+
+  gap: 10%;
 }
 
-.Contact__section-header {
+.Contact__section-content-left {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+
+  .Contact__number {
+    right: 0;
+  }
 
   h1 {
     margin-bottom: 1rem;
     margin-top: 10rem;
-    color: $gradient;
+
+    text-align: right;
   }
 
   p {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+
+    text-align: right;
   }
 }
 
 .Contact__section-form-container {
+  display: flex;
+  align-items: center;
+
+  margin-block: 18vh;
+
+  // margin-top: 10rem;
+
   form {
     height: fit-content;
     display: flex;

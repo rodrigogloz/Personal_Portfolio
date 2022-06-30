@@ -11,17 +11,27 @@
 }
 
 .Projects__section-grid {
-  margin: 10vh 20px;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  margin-block: 25vh;
+  margin-inline: $section-margin-inline;
   max-width: 68rem;
   min-height: 50vh;
+
+  gap: 10%;
 }
 
-.Projects__section-header {
+.Projects__section-content-right {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
+  height: 400px;
   position: relative;
-  overflow: hidden;
+
+  > * {
+    overflow: hidden;
+  }
 
   h1 {
     margin-bottom: 1rem;
@@ -30,115 +40,5 @@
 
   p {
     margin-bottom: 6rem;
-  }
-}
-
-.Projects__section-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: 2rem 0px;
-  // border-top: 1px solid gray;
-
-  .Projects__section-image {
-    width: 45%;
-    min-width: 20rem;
-    min-height: 250px;
-    aspect-ratio: 7/4;
-    background-image: url("../../assets/imagen-cover-provisional.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
-    position: relative;
-
-    box-shadow: 1rem 1rem 0px 0px $translucid-grey;
-  }
-
-  .Projects__section-description {
-    position: relative;
-    width: 45%;
-    height: 100%;
-
-    h2 {
-      margin-bottom: 1rem;
-      padding-bottom: 5px;
-      position: relative;
-      width: max-content;
-      &::after {
-        content: "";
-        position: absolute;
-        height: 3px;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-image: $gradient;
-      }
-    }
-
-    .card-buttons {
-      margin-top: 2rem;
-      width: 100%;
-      display: flex;
-      position: relative;
-
-      button {
-        cursor: pointer;
-        padding: 0.5rem 1.5rem;
-        margin-left: auto;
-        color: lighten($color: black, $amount: 40);
-        border: solid 2px transparent;
-        background-image: linear-gradient(
-            rgba(255, 255, 255, 0),
-            rgba(255, 255, 255, 0)
-          ),
-          -webkit-linear-gradient(35deg, rgba(0, 183, 255, 1), rgba(29, 38, 253, 1), rgba(84, 50, 207, 1));
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        box-shadow: 2px 1000px 1px white inset;
-        border-radius: 0.5rem;
-        transition: 1s;
-        // animation: animatedgradient 3s ease alternate infinite;
-        // background-size: 300% 300%;
-
-        &:hover,
-        &:focus {
-          animation: animatedgradient 4s ease alternate infinite;
-          background-size: 300% 300%;
-          color: black;
-        }
-      }
-    }
-  }
-}
-
-.dark .card-buttons button {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    -webkit-linear-gradient(35deg, rgba(0, 183, 255, 1), rgba(29, 38, 253, 1), rgba(84, 50, 207, 1));
-  box-shadow: 2px 1000px 1px $dark-bg inset !important;
-  color: darken($color: white, $amount: 20) !important;
-
-  &:hover,
-  &:focus {
-    animation: animatedgradient 4s ease alternate infinite;
-    background-size: 300% 300%;
-    color: white;
-  }
-}
-
-@keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 99% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }

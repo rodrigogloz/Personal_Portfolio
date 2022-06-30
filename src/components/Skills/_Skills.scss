@@ -13,10 +13,13 @@
 .Skills__section-grid {
   align-self: flex-start;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 10vh 20px;
+  grid-template-columns: 3fr 5fr;
+  margin-block: 25vh;
+  margin-inline: $section-margin-inline;
   max-width: 68rem;
   min-height: 50vh;
+
+  gap: 10%;
 }
 
 .Skills__section-content-left {
@@ -25,12 +28,100 @@
   flex-direction: column;
   position: relative;
 
+  .Skills__number {
+    right: 0;
+  }
+
   h1 {
     margin-bottom: 1rem;
     margin-top: 10rem;
+
+    text-align: right;
   }
 
   p {
     margin-bottom: 6rem;
+
+    text-align: right;
+  }
+}
+
+// PRUEBAS CAROUSEL
+
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@mixin dark-gradient {
+  background: linear-gradient(
+    to right,
+    $dark-bg 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 7));
+  }
+}
+
+// Styling
+.slider {
+  background: white;
+  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 400px;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(100px * 14);
+  }
+
+  .slide {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+
+    img {
+      width: 100px;
+      height: 100px;
+      padding: 1rem;
+    }
   }
 }

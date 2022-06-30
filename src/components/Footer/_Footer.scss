@@ -1,12 +1,13 @@
 .Footer__section {
   background-color: $translucid-grey;
   // background-color: $gradient;
-  min-height: 20vh;
+  // min-height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 60px 1rem 60px;
+  padding: 1rem 60px 1rem 60px;
+  height: 20vh;
 
   > * {
   }
@@ -16,6 +17,8 @@
     display: flex;
     width: 100%;
     justify-content: center;
+
+    // display: none;
 
     > a {
       height: fit-content;
@@ -31,6 +34,9 @@
       }
 
       &:hover {
+        color: darken($color: white, $amount: 50);
+
+        transition: 0.5s;
       }
     }
   }
@@ -42,11 +48,17 @@
     justify-content: center;
 
     > a {
-      margin-top: 1rem;
+      // margin-top: 1rem;
       color: $dark-bg;
 
       margin-inline: 1rem;
       transition: 1s;
+
+      &:hover {
+        color: darken($color: white, $amount: 50);
+
+        transition: 0.5s;
+      }
     }
   }
 
