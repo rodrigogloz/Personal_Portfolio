@@ -51,91 +51,162 @@ export const Skills = () => {
             </p>
           </div>
           <div className="Skills__section-content-right">
+            <p>
+              Principalmente mis competencias se centran en el desarrollo
+              Front-End, siendo mis herramientas principales HTML, CSS y
+              JavaScript con ReactJS.
+              <br />
+              <br />
+              También poseo conocimientos en Firebase, gestión de dependencias
+              mediante NPM, control de versiones mediante Git, testing con Jest
+              o manejo de preprocesadores como SASS, entre otras herramientas.
+              <br />
+              <br />
+              Actualmente me encuentro ampliando mis conocimientos en React,
+              aprendiendo nuevos Frameworks dentro del mismo como Next.js.
+              <br />
+              <br />A continuación encontrarás una lista de las principales
+              herramientas con las que he trabajado hasta la fecha:
+            </p>
             <div class="slider">
               <div class="slide-track">
                 <div class="slide">
-                  <img src={logoHTML} alt="" />
+                  <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
+                  <p>HTML</p>
                 </div>
                 <div class="slide">
-                  <img src={logoCSS} alt="" />
+                  <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
+                  <p>CSS</p>
                 </div>
                 <div class="slide">
-                  <img src={logoJS} alt="" />
+                  <img src={logoJS} alt="JavaScript logo" aria-hidden="true" />
+                  <p>JavaScript</p>
                 </div>
                 <div class="slide">
-                  <img src={logoReact} alt="" />
+                  <img src={logoReact} alt="React logo" aria-hidden="true" />
+                  <p>React</p>
                 </div>
                 <div class="slide">
-                  <img src={logoRedux} alt="" />
+                  <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
+                  <p>Redux</p>
                 </div>
                 <div class="slide">
-                  <img src={logoSass} alt="" />
+                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
+                  <p>SASS</p>
                 </div>
                 <div class="slide">
-                  <img src={logoMongoDB} alt="" />
+                  <img
+                    src={logoMongoDB}
+                    alt="MongoDB logo"
+                    aria-hidden="true"
+                  />
+                  <p>MongoDB</p>
                 </div>
                 <div class="slide">
-                  <img src={logoFirebase} alt="" />
+                  <img
+                    src={logoFirebase}
+                    alt="Firebase logo"
+                    aria-hidden="true"
+                  />
+                  <p>Firebase</p>
                 </div>
                 <div class="slide">
-                  <img src={logoVSCode} alt="" />
+                  <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
+                  <p>VS Code</p>
                 </div>
                 <div class="slide">
-                  <img src={logoLinux} alt="" />
+                  <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
+                  <p>Linux</p>
                 </div>
                 <div class="slide">
-                  <img src={logoNPM} alt="" />
+                  <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
+                  <p>NPM</p>
                 </div>
                 <div class="slide">
-                  <img src={logoJest} alt="" />
+                  <img src={logoJest} alt="Jest logo" aria-hidden="true" />
+                  <p>Jest</p>
                 </div>
                 <div class="slide">
-                  <img src={logoGit} alt="" />
+                  <img src={logoGit} alt="Git logo" aria-hidden="true" />
+                  <p>Git</p>
                 </div>
                 <div class="slide">
-                  <img src={logoGitHub} alt="" />
+                  <img
+                    src={logoGitHub}
+                    alt="GitHub logo"
+                    className="logoGitHub"
+                    aria-hidden="true"
+                  />
+                  <p>GitHub</p>
                 </div>
                 <div class="slide">
-                  <img src={logoHTML} alt="" />
+                  <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
+                  <p>HTML</p>
                 </div>
                 <div class="slide">
-                  <img src={logoCSS} alt="" />
+                  <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
+                  <p>CSS</p>
                 </div>
                 <div class="slide">
-                  <img src={logoJS} alt="" />
+                  <img src={logoJS} alt="JavaScript logo" aria-hidden="true" />
+                  <p>JavaScript</p>
                 </div>
                 <div class="slide">
-                  <img src={logoReact} alt="" />
+                  <img src={logoReact} alt="React logo" aria-hidden="true" />
+                  <p>React</p>
                 </div>
                 <div class="slide">
-                  <img src={logoRedux} alt="" />
+                  <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
+                  <p>Redux</p>
                 </div>
                 <div class="slide">
-                  <img src={logoSass} alt="" />
+                  <img src={logoSass} alt="SASS logo" aria-hidden="true" />
+                  <p>SASS</p>
                 </div>
                 <div class="slide">
-                  <img src={logoMongoDB} alt="" />
+                  <img
+                    src={logoMongoDB}
+                    alt="MongoDB logo"
+                    aria-hidden="true"
+                  />
+                  <p>MongoDB</p>
                 </div>
                 <div class="slide">
-                  <img src={logoFirebase} alt="" />
+                  <img
+                    src={logoFirebase}
+                    alt="Firebase logo"
+                    aria-hidden="true"
+                  />
+                  <p>Firebase</p>
                 </div>
                 <div class="slide">
-                  <img src={logoVSCode} alt="" />
+                  <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
+                  <p>VS Code</p>
                 </div>
                 <div class="slide">
-                  <img src={logoLinux} alt="" />
+                  <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
+                  <p>Linux</p>
                 </div>
                 <div class="slide">
-                  <img src={logoNPM} alt="" />
+                  <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
+                  <p>NPM</p>
                 </div>
                 <div class="slide">
-                  <img src={logoJest} alt="" />
+                  <img src={logoJest} alt="Jest logo" aria-hidden="true" />
+                  <p>Jest</p>
                 </div>
                 <div class="slide">
-                  <img src={logoGit} alt="" />
+                  <img src={logoGit} alt="Git logo" aria-hidden="true" />
+                  <p>Git</p>
                 </div>
                 <div class="slide">
-                  <img src={logoGitHub} alt="" />
+                  <img
+                    src={logoGitHub}
+                    alt="GitHub logo"
+                    className="logoGitHub"
+                    aria-hidden="true"
+                  />
+                  <p>GitHub</p>
                 </div>
               </div>
             </div>

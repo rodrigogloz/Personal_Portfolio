@@ -90,9 +90,6 @@
       background-image: $gradient;
     }
   }
-  hr {
-    margin-bottom: 1.25rem;
-  }
 }
 
 .transparent-div {
@@ -119,6 +116,13 @@
       rgb($dark-bg, 1)
     );
   }
+  // .home__section-content-left h1 {
+  //   animation: text_revealing_dark 0s ease forwards;
+  // }
+  // p .home__fade-in {
+  //   animation: text_revealing_dark 3s ease forwards;
+  //   animation-delay: 4.3s;
+  // }
 }
 
 .home__section-content-left h1 {
@@ -167,9 +171,15 @@
   animation-delay: 1.5s;
 }
 
-@keyframes text_revealing {
+@keyframes text_revealing_dark {
   100% {
     color: white;
+  }
+}
+
+@keyframes text_revealing {
+  100% {
+    color: black;
   }
 }
 

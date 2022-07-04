@@ -48,3 +48,9 @@
   align-items: center;
   text-align: right;
 }
+
+.About__section-footer {
+  background-color: $translucid-grey;
+  margin-inline: $section-margin-inline;
+  padding: 2rem;
+}

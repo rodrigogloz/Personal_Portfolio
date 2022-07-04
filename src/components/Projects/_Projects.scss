@@ -42,3 +42,134 @@
     margin-bottom: 6rem;
   }
 }
+
+.Projects__section-content-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+
+  .project {
+    display: flex;
+    justify-content: space-between;
+    // cursor: pointer;
+    height: 100%;
+    transition: 0.5s;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-color: $translucid-grey;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-image: url("../../assets/imagen-cover-provisional.jpg");
+      background-size: cover;
+      // background-position: center;
+      // background-attachment: fixed;
+      opacity: 20%;
+      z-index: -1;
+    }
+
+    h2 {
+      transition: 0.5s;
+      color: white;
+      // background: $gradient;
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+
+    ul {
+      overflow: hidden;
+      transition: 0.5s;
+      background-color: $translucid-grey;
+      padding-inline: 0.5rem;
+      border-radius: 50px;
+
+      li {
+        display: inline;
+        padding: 0.5rem;
+
+        img {
+          height: 2rem;
+          width: 2rem;
+          padding-top: 0.25rem;
+        }
+      }
+    }
+
+    p {
+      color: white;
+      opacity: 0;
+      transition: 0.5s;
+      position: absolute;
+      padding: 1rem;
+    }
+
+    .project-links-container {
+      position: absolute;
+      right: 1rem;
+      bottom: 0.75rem;
+      padding-inline: 0.5rem;
+      overflow: hidden;
+      transition: 0.5s;
+      background-color: $translucid-grey;
+      border-radius: 50px;
+      display: flex;
+      gap: 1.5rem;
+      opacity: 0;
+
+      a {
+        color: white;
+      }
+      a > * {
+        height: 1rem;
+        width: 1rem;
+        padding-inline: 0.5rem;
+        padding-top: 2px;
+      }
+    }
+
+    &:hover {
+      height: 500%;
+
+      h2 {
+        transform: translateY(-210%);
+        transition: 0.5s;
+        // opacity: 0;
+      }
+      ul {
+        transform: translateY(-150%);
+        transition: 0.5s;
+        // opacity: 0;
+      }
+      p {
+        transition: 0.5s;
+        opacity: 1;
+      }
+
+      &::before {
+        opacity: 90%;
+      }
+
+      .project-links-container {
+        opacity: 1;
+      }
+    }
+  }
+
+  .project1 {
+  }
+  .project2 {
+  }
+  .project3 {
+  }
+  .project4 {
+  }
+}

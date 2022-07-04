@@ -46,7 +46,18 @@
   }
 }
 
-// PRUEBAS CAROUSEL
+.Skills__section-content-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+// CAROUSEL
 
 @mixin white-gradient {
   background: linear-gradient(
@@ -79,25 +90,30 @@ $animationSpeed: 40s;
 // Styling
 .slider {
   background: white;
-  // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
-  height: 100px;
+  height: 125px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  // width: 960px;
+  width: 100%;
+
+  p {
+    text-align: center;
+    font-size: 12px;
+  }
 
   &::before,
   &::after {
     @include white-gradient;
     content: "";
-    height: 100px;
+    height: 120px;
     position: absolute;
     width: 200px;
     z-index: 2;
   }
 
   &::after {
-    right: 400px;
+    right: 0;
     top: 0;
     transform: rotateZ(180deg);
   }
@@ -114,7 +130,7 @@ $animationSpeed: 40s;
   }
 
   .slide {
-    height: 100px;
+    height: 120px;
     width: 100px;
     overflow: hidden;
 
@@ -123,5 +139,19 @@ $animationSpeed: 40s;
       height: 100px;
       padding: 1rem;
     }
+  }
+}
+
+.dark .slider {
+  background: $dark-bg;
+
+  &::before,
+  &::after {
+    @include dark-gradient;
+  }
+
+  .logoGitHub {
+    filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(51deg)
+      brightness(103%) contrast(104%);
   }
 }

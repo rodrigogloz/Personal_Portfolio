@@ -36,8 +36,8 @@ export const Contact = () => {
               <span className="gradient-text">Contacto</span>
             </h1>
             <p>
-              Ante cualquier duda o solicitud, no dudes en contactarme y
-              contestaré tan pronto como sea posible.
+              Contáctame mediante el siguiente formulario y contestaré tan
+              pronto como sea posible.
             </p>
           </div>
           <div className="Contact__section-content-right">
@@ -67,7 +67,7 @@ export const Contact = () => {
                 <textarea
                   name="message"
                   cols="30"
-                  rows="7"
+                  rows="8"
                   className="glass form-message"
                   placeholder="Escribe aquí tu mensaje"
                 />
