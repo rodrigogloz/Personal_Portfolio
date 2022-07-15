@@ -73,9 +73,9 @@ export const Contact = () => {
                 />
                 <div className="form-bottom">
                   <div>
-                    <p>
+                    {/* <p>
                       <span>*</span> campo requerido
-                    </p>
+                    </p> */}
                   </div>
                   <input
                     // className="gradient-div"

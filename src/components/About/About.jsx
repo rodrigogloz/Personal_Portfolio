@@ -73,13 +73,13 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <div className="About__section-footer">
+        {/* <div className="About__section-footer">
           <p>
             Puedes encontrar información ampliada acerca de mi perfil
             profesional visitando mi perfil de Linkedin o accediendo a mi
             currículum personal mediante los enlaces proporcionados.
           </p>
-        </div>
+        </div> */}
       </section>
     </>
   );

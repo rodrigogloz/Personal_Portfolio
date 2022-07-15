@@ -49,7 +49,7 @@ export const Header = ({ referencia }) => {
             &lt; <span className="">Rodrigo Gloz</span> /&gt;
           </a>
           <ul className="Header__nav-ul">
-            {/* <li>
+            <li>
               <a
                 href="#home"
                 className="Header__nav-a hover-underline font-subtitle home"
@@ -59,7 +59,7 @@ export const Header = ({ referencia }) => {
                 </span>
                 Inicio
               </a>
-            </li> */}
+            </li>
             <li>
               <a
                 href="#about"

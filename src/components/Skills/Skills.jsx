@@ -68,33 +68,33 @@ export const Skills = () => {
               <br />A continuación encontrarás una lista de las principales
               herramientas con las que he trabajado hasta la fecha:
             </p>
-            <div class="slider">
-              <div class="slide-track">
-                <div class="slide">
+            <div className="slider">
+              <div className="slide-track">
+                <div className="slide">
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                   <p>HTML</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
                   <p>CSS</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoJS} alt="JavaScript logo" aria-hidden="true" />
                   <p>JavaScript</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoReact} alt="React logo" aria-hidden="true" />
                   <p>React</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
                   <p>Redux</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoSass} alt="SASS logo" aria-hidden="true" />
                   <p>SASS</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoMongoDB}
                     alt="MongoDB logo"
@@ -102,7 +102,7 @@ export const Skills = () => {
                   />
                   <p>MongoDB</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoFirebase}
                     alt="Firebase logo"
@@ -110,27 +110,27 @@ export const Skills = () => {
                   />
                   <p>Firebase</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
                   <p>VS Code</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
                   <p>Linux</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
                   <p>NPM</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoJest} alt="Jest logo" aria-hidden="true" />
                   <p>Jest</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoGit} alt="Git logo" aria-hidden="true" />
                   <p>Git</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoGitHub}
                     alt="GitHub logo"
@@ -139,31 +139,31 @@ export const Skills = () => {
                   />
                   <p>GitHub</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
                   <p>HTML</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoCSS} alt="CSS logo" aria-hidden="true" />
                   <p>CSS</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoJS} alt="JavaScript logo" aria-hidden="true" />
                   <p>JavaScript</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoReact} alt="React logo" aria-hidden="true" />
                   <p>React</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoRedux} alt="Redux logo" aria-hidden="true" />
                   <p>Redux</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoSass} alt="SASS logo" aria-hidden="true" />
                   <p>SASS</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoMongoDB}
                     alt="MongoDB logo"
@@ -171,7 +171,7 @@ export const Skills = () => {
                   />
                   <p>MongoDB</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoFirebase}
                     alt="Firebase logo"
@@ -179,27 +179,27 @@ export const Skills = () => {
                   />
                   <p>Firebase</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
                   <p>VS Code</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoLinux} alt="Linux logo" aria-hidden="true" />
                   <p>Linux</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoNPM} alt="NPM logo" aria-hidden="true" />
                   <p>NPM</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoJest} alt="Jest logo" aria-hidden="true" />
                   <p>Jest</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img src={logoGit} alt="Git logo" aria-hidden="true" />
                   <p>Git</p>
                 </div>
-                <div class="slide">
+                <div className="slide">
                   <img
                     src={logoGitHub}
                     alt="GitHub logo"

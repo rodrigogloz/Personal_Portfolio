@@ -8,22 +8,15 @@ export const Home = () => {
         <div className="home__section-grid">
           <div className="home__section-content-left">
             <div>
-              <h1 className="line-1">
-                Bienvenid@. <span className="text-reveal-1 reveal"></span>{" "}
-              </h1>{" "}
-              <br />
-              <h1 className="line-2">
-                {" "}
-                Me llamo Rodrigo, <span className="text-reveal-2 reveal"></span>
-              </h1>{" "}
-              <br />
+              <h1 className="line-1">Bienvenid@. </h1> <br />
+              <h1 className="line-2"> Me llamo Rodrigo,</h1> <br />
               <h1 className="line-3">
                 y soy desarrollador
                 <span className="gradient-text line-gradient text-reveal-4">
                   {" "}
                   Front-End
                 </span>
-                . <span className="text-reveal-3 reveal"></span>
+                .
               </h1>
             </div>
             {/* <hr /> */}

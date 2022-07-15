@@ -116,21 +116,15 @@
       rgb($dark-bg, 1)
     );
   }
-  // .home__section-content-left h1 {
-  //   animation: text_revealing_dark 0s ease forwards;
-  // }
-  // p .home__fade-in {
-  //   animation: text_revealing_dark 3s ease forwards;
-  //   animation-delay: 4.3s;
-  // }
 }
 
 .home__section-content-left h1 {
   font-size: 3.5rem;
   position: relative;
-  color: transparent;
-  animation: text_revealing 0s ease forwards;
-  // animation-delay: 3s;
+  opacity: 0;
+
+  animation: fadeIn 2s ease forwards;
+
   display: inline-block;
 }
 .line-1 {
@@ -146,45 +140,23 @@
   background-image: none;
   animation: gradient_revealing 2s ease forwards;
 }
-.text-reveal-1 {
-  animation-delay: 1.5s !important;
-}
-.text-reveal-2 {
-  /* animation-direction: reverse; */
-  animation-delay: 2.5s !important;
-}
-.text-reveal-3 {
-  animation-delay: 3.5s !important;
-}
-.text-reveal-4 {
-  animation-delay: 3.5s !important;
-}
-.reveal {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0;
-  left: 0;
-  top: 0;
-  background-image: $gradient;
-  animation: revealing 1s ease forwards;
-  animation-delay: 1.5s;
-}
 
-@keyframes text_revealing_dark {
-  100% {
-    color: white;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-}
-
-@keyframes text_revealing {
   100% {
-    color: black;
+    opacity: 1;
   }
 }
 
 @keyframes gradient_revealing {
+  0% {
+    opacity: 0;
+    background-image: $gradient;
+  }
   100% {
+    opacity: 1;
     background-image: $gradient;
   }
 }
@@ -203,30 +175,18 @@
 p .home__fade-in {
   display: inline-block;
   margin-bottom: 0.5rem;
-  color: transparent;
-  animation: text_revealing ease forwards 3s;
-  animation-delay: 4.3s;
+  opacity: 0;
+
+  animation: fadeIn ease forwards 2s;
+  animation-delay: 5s;
 }
 
 @keyframes homeFadeIn {
   0% {
     opacity: 0;
   }
-  60% {
-    opacity: 0;
-  }
+
   100% {
     opacity: 1;
   }
 }
-
-// @media only screen and (max-width: 890px) {
-//   .container {
-//     flex-direction: column-reverse;
-
-//     .reveal {
-//       display: block;
-//       width: fit-content;
-//     }
-//   }
-// }

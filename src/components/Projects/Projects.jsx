@@ -59,14 +59,13 @@ export const Projects = () => {
               <p>Aplicación de lista de tareas hecha con React.</p>
               <div className="project-links-container">
                 <a href="/">
-                  Ir al proyecto
+                  Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
                 <a href="/">
-                  Ver código
-                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                  Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
             </div>
@@ -89,14 +88,13 @@ export const Projects = () => {
               </p>
               <div className="project-links-container">
                 <a href="/">
-                  Ir al proyecto
+                  Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
                 <a href="/">
-                  Ver código
-                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                  Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
             </div>
@@ -129,14 +127,13 @@ export const Projects = () => {
               </p>
               <div className="project-links-container">
                 <a href="/">
-                  Ir al proyecto
+                  Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
                 <a href="/">
-                  Ver código
-                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                  Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
             </div>
@@ -159,8 +156,7 @@ export const Projects = () => {
               </p>
               <div className="project-links-container">
                 <a href="/">
-                  Ver código
-                  <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                  Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
             </div>

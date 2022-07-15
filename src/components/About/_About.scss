@@ -5,7 +5,7 @@
   background-size: cover;
   display: grid;
   justify-content: center;
-  min-height: 100vh;
+  // min-height: 100vh;
   position: relative;
   width: 100%;
 }
@@ -14,10 +14,12 @@
   align-self: flex-start;
   display: grid;
   grid-template-columns: 5fr 3fr;
-  margin-block: 25vh;
-  margin-inline: $section-margin-inline;
+  // margin-block: 25vh;
+  // margin-inline: $section-margin-inline;
   max-width: 68rem;
   min-height: 50vh;
+
+  margin: 20vh auto;
 
   gap: 10%;
 }
@@ -53,4 +55,5 @@
   background-color: $translucid-grey;
   margin-inline: $section-margin-inline;
   padding: 2rem;
+  max-width: 68rem;
 }
