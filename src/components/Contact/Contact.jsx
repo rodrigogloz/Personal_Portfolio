@@ -26,7 +26,7 @@ export const Contact = () => {
   return (
     <>
       <section className="Contact__section" id="contact">
-        <span className="gradient-div separator" />
+        <span className="white-grey" />
         <div className="Contact__section-grid">
           <div className="Contact__section-content-left">
             <h2 className="big-number Contact__number" aria-hidden="true">

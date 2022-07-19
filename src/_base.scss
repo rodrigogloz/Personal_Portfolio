@@ -73,6 +73,10 @@ body {
   }
 }
 
+.sr-only {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -190,4 +194,36 @@ button {
 .gradient-div {
   background: $gradient;
   -webkit-text-fill-color: transparent;
+}
+
+// Divider gradient divs
+
+.white-grey {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(rgba(white, 1), rgb(white, 0));
+}
+
+.grey-white {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(rgba($light-bg2, 1), rgb($light-bg2, 0));
+}
+
+.dark {
+  .white-grey {
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(rgba($dark-bg, 1), rgb($dark-bg, 0));
+  }
+
+  .grey-white {
+    position: absolute;
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(rgba($dark-bg2, 1), rgb($dark-bg2, 0));
+  }
 }

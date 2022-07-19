@@ -9,6 +9,13 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+
+  z-index: 0;
+  background-color: $light-bg2;
+}
+
+.dark .Contact__section {
+  background-color: $dark-bg2;
 }
 
 .Contact__section-grid {

@@ -36,7 +36,7 @@ export const Skills = () => {
   return (
     <>
       <section className="Skills__section" id="skills">
-        <span className="gradient-div separator" />
+        <span className="white-grey" />
         <div className="Skills__section-grid">
           <div className="Skills__section-content-left">
             <h2 className="big-number Skills__number" aria-hidden="true">

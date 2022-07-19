@@ -40,7 +40,7 @@ export const Projects = () => {
   return (
     <>
       <section className="Projects__section" id="projects">
-        <span className="gradient-div separator" />
+        <span className="grey-white" />
         <div className="Projects__section-grid">
           <div className="Projects__section-content-left">
             <div className="project project1">

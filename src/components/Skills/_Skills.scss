@@ -8,6 +8,13 @@
   // min-height: 100vh;
   position: relative;
   width: 100%;
+
+  z-index: 0;
+  background-color: $light-bg2;
+}
+
+.dark .Skills__section {
+  background-color: $dark-bg2;
 }
 
 .Skills__section-grid {
@@ -19,7 +26,7 @@
   max-width: 68rem;
   min-height: 50vh;
 
-  margin: 20vh auto;
+  margin: 20vh auto 10vh auto;
 
   gap: 10%;
 }
@@ -64,7 +71,7 @@
 @mixin white-gradient {
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 1) 0%,
+    $light-bg2 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -72,7 +79,7 @@
 @mixin dark-gradient {
   background: linear-gradient(
     to right,
-    $dark-bg 0%,
+    $dark-bg2 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -91,7 +98,7 @@ $animationSpeed: 40s;
 
 // Styling
 .slider {
-  background: white;
+  background: $light-bg2;
   height: 125px;
   margin: auto;
   overflow: hidden;
@@ -145,7 +152,7 @@ $animationSpeed: 40s;
 }
 
 .dark .slider {
-  background: $dark-bg;
+  background: $dark-bg2;
 
   &::before,
   &::after {

@@ -9,6 +9,8 @@
 
   z-index: 0;
 
+  background-color: white;
+
   &::before {
     content: "";
     position: absolute;
@@ -22,6 +24,10 @@
     background-attachment: fixed;
     opacity: 10%;
   }
+}
+
+.dark .home__section {
+  background-color: $dark-bg;
 }
 
 .home__section-gradient {
@@ -108,14 +114,12 @@
   transition: background 1s ease;
 }
 
-.dark {
-  .transparent-div {
-    background: linear-gradient(
-      rgba($dark-bg, 0),
-      rgb($dark-bg, 0.3) 30%,
-      rgb($dark-bg, 1)
-    );
-  }
+.dark .transparent-div {
+  background: linear-gradient(
+    rgba($dark-bg, 0),
+    rgb($dark-bg, 0.3) 30%,
+    rgb($dark-bg, 1)
+  );
 }
 
 .home__section-content-left h1 {

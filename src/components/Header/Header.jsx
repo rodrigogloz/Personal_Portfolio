@@ -1,6 +1,9 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useRef } from "react";
 import { DarkModeSwitch } from "../Utils/DarkModeSwitch";
-import ProgressBar from "./ProgressBar";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Header = ({ referencia }) => {
   const sections = document.querySelectorAll("section");
@@ -40,15 +43,46 @@ export const Header = ({ referencia }) => {
     };
   }, []);
 
+  const primaryNav = useRef();
+  const navToggle = useRef();
+
+  const toggleNavbar = () => {
+    const visibility = primaryNav.current.getAttribute("data-visible");
+
+    if (visibility === "false") {
+      primaryNav.current.setAttribute("data-visible", true);
+      navToggle.current.setAttribute("area-expanded", true);
+    } else {
+      primaryNav.current.setAttribute("data-visible", false);
+      navToggle.current.setAttribute("area-expanded", false);
+    }
+  };
+
   return (
     <header>
-      <div className="Header__nav-container">
-        {/* <ProgressBar className="progress_bar" scrollRef={referencia} /> */}
-        <nav className="Header__nav" ref={headerNavRef}>
-          <a className="tag-logo font-subtitle gradient-text" href="#home">
-            &lt; <span className="">Rodrigo Gloz</span> /&gt;
-          </a>
-          <ul className="Header__nav-ul">
+      <div className="Header__nav-container" ref={headerNavRef}>
+        <a className="tag-logo font-subtitle gradient-text" href="#home">
+          &lt; <span className="">Rodrigo Gloz</span> /&gt;
+        </a>
+
+        <button
+          className="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          ref={navToggle}
+          onClick={toggleNavbar}
+        >
+          <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+          <span className="sr-only">Menu</span>
+        </button>
+
+        <nav className="Header__nav">
+          <ul
+            className="Header__nav-ul"
+            id="primary-navigation"
+            data-visible="false"
+            ref={primaryNav}
+          >
             <li>
               <a
                 href="#home"
@@ -104,10 +138,9 @@ export const Header = ({ referencia }) => {
                 Contacto
               </a>
             </li>
-
-            <DarkModeSwitch />
           </ul>
         </nav>
+        <DarkModeSwitch />
       </div>
     </header>
   );
