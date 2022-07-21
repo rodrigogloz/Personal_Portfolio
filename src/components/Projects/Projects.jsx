@@ -39,9 +39,9 @@ export const Projects = () => {
 
   return (
     <>
-      <section className="Projects__section" id="projects">
+      <section className="Projects__section section" id="projects">
         <span className="grey-white" />
-        <div className="Projects__section-grid">
+        <div className="Projects__section-grid section-grid">
           <div className="Projects__section-content-left">
             <div className="project project1">
               <h2>To-Do App</h2>

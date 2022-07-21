@@ -21,9 +21,9 @@ export const About = () => {
 
   return (
     <>
-      <section className="About__section" id="about">
+      <section className="About__section section" id="about">
         <span className="gradient-div separator" />
-        <div className="About__section-grid">
+        <div className="About__section-grid section-grid">
           <div className="About__section-content-left">
             <p>
               Mi nombre es Rodrigo y actualmente resido en Galicia, donde he

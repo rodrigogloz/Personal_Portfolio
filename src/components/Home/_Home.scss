@@ -194,3 +194,9 @@ p .home__fade-in {
     opacity: 1;
   }
 }
+
+@media (max-width: 1150px) {
+  .home__section-content-left h1 {
+    font-size: 2.5rem;
+  }
+}

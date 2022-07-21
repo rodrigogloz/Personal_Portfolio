@@ -3,7 +3,11 @@
   width: 100%;
   z-index: 99;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  > button {
+    cursor: pointer;
+  }
 }
 
 .Header__nav {
@@ -11,7 +15,7 @@
   height: 4rem;
   justify-content: space-between;
   // margin-top: 5px;
-  padding: 0 60px 0 60px;
+  // padding: 0 60px 0 60px;
 }
 
 .mobile-nav-toggle {
@@ -90,6 +94,9 @@
   .Header__nav-ul a > [aria-hidden] {
     display: none;
   }
+  .large-name {
+    display: none;
+  }
 }
 
 .tag-logo {
@@ -97,7 +104,7 @@
   cursor: pointer;
   font-size: 26px;
   font-weight: 600;
-  padding: 0 10px 1px 10px;
+  margin: 0 1rem 1px 1rem;
   text-align: center;
 }
 
@@ -147,15 +154,15 @@
       position: absolute;
       transform-origin: bottom left;
       transform: scaleX(0);
-      transition: transform 0.4s ease-out;
+      // transition: transform 0.4s ease-out;
       width: 100%;
     }
 
-    &:hover::after,
+    // &:hover::after,
     &.active::after {
       transform-origin: bottom left;
       transform: scaleX(1);
-      transition: transform 0.3s ease-out;
+      // transition: transform 0.3s ease-out;
     }
   }
 }

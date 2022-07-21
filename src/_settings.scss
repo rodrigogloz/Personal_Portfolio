@@ -19,18 +19,18 @@ $anchor: rgb(0, 183, 255);
 $gradient: -webkit-linear-gradient(
   35deg,
   rgb(9, 218, 255),
-  rgb(88, 82, 255),
+  // rgb(88, 82, 255),
   rgb(166, 97, 255)
 );
 
 $dark-bg2: darken(
   $color: white,
-  $amount: 92,
+  $amount: 90,
 );
 
 $light-bg2: darken(
   $color: white,
-  $amount: 10,
+  $amount: 8,
 );
 
 // $dark-bg2: black;

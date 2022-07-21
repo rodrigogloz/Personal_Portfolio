@@ -87,14 +87,6 @@ ul {
 
 h1 {
   font-size: 3rem;
-
-  // font-family: "Monument";
-  // font-size: 2.5rem;
-  // font-weight: 100;
-}
-
-h3 {
-  // font-family: "Monument" !important;
 }
 
 p {
@@ -110,6 +102,45 @@ textarea {
 
 button {
   font-weight: 500;
+}
+
+@media (min-width: 700px) and (max-width: 1150px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  div .section-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 3fr 5fr;
+    margin-inline: 1rem;
+    margin-block: 1rem;
+  }
+
+  div .home__section-grid {
+    margin-inline: 1rem;
+  }
+}
+
+// Sections:
+
+.section {
+  border-bottom: 1px solid $translucid-grey;
+  min-height: 100vh;
+}
+
+.section-grid {
+  margin-inline: 3rem;
+  margin-block: auto;
 }
 
 // Scrollbar styles:
@@ -203,6 +234,8 @@ button {
   width: 100%;
   height: 6rem;
   background: linear-gradient(rgba(white, 1), rgb(white, 0));
+
+  display: none;
 }
 
 .grey-white {
@@ -210,6 +243,8 @@ button {
   width: 100%;
   height: 6rem;
   background: linear-gradient(rgba($light-bg2, 1), rgb($light-bg2, 0));
+
+  display: none;
 }
 
 .dark {
@@ -218,6 +253,8 @@ button {
     width: 100%;
     height: 6rem;
     background: linear-gradient(rgba($dark-bg, 1), rgb($dark-bg, 0));
+
+    display: none;
   }
 
   .grey-white {
@@ -225,5 +262,7 @@ button {
     width: 100%;
     height: 6rem;
     background: linear-gradient(rgba($dark-bg2, 1), rgb($dark-bg2, 0));
+
+    display: none;
   }
 }

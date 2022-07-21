@@ -62,7 +62,12 @@ export const Header = ({ referencia }) => {
     <header>
       <div className="Header__nav-container" ref={headerNavRef}>
         <a className="tag-logo font-subtitle gradient-text" href="#home">
-          &lt; <span className="">Rodrigo Gloz</span> /&gt;
+          &lt;{" "}
+          <span>
+            R<span className="large-name">odrigo</span>G
+            <span className="large-name">loz</span>
+          </span>{" "}
+          /&gt;
         </a>
 
         <button

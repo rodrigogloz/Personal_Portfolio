@@ -27,7 +27,7 @@ export const Contact = () => {
     <>
       <section className="Contact__section" id="contact">
         <span className="white-grey" />
-        <div className="Contact__section-grid">
+        <div className="Contact__section-grid section-grid">
           <div className="Contact__section-content-left">
             <h2 className="big-number Contact__number" aria-hidden="true">
               04
