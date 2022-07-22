@@ -10,7 +10,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .Header__nav-container {
     color: #ecf0f1;
     background: rgba(0, 0, 0, 0.6);
@@ -32,7 +32,7 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .Header__nav-ul {
     height: 100%;
     position: fixed;
@@ -100,7 +100,7 @@
   }
 }
 
-@media (min-width: 700px) and (max-width: 1150px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .Header__nav-ul a > [aria-hidden] {
     display: none;
   }
@@ -228,7 +228,7 @@
   align-self: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .DarkModeSwitch-container {
   }
 }
