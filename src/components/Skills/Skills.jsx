@@ -17,9 +17,9 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Skills = () => {
   const options = {
-    rootMargin: "120px",
+    rootMargin: "50px",
     threshold: 1.0,
-    target: ".Skills__section-grid",
+    target: ".skills-title",
   };
 
   const isIntersecting = useIntersectionObserver(options);
@@ -43,7 +43,7 @@ export const Skills = () => {
               02
             </h2>
             <h1>
-              <span className="gradient-text">Competencias</span>
+              <span className="gradient-text skills-title">Competencias</span>
             </h1>
             <p>
               Mis competencias profesionales, herramientas y lenguajes con los

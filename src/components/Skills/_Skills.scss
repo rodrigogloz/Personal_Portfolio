@@ -78,9 +78,11 @@
 
 @mixin dark-gradient {
   background: linear-gradient(
-    to right,
+    90deg,
     $dark-bg2 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(9, 9, 9, 0) 25%,
+    rgba(14, 14, 14, 0) 75%,
+    $dark-bg2 100%
   );
 }
 
@@ -106,13 +108,12 @@ $animationSpeed: 40s;
   // width: 960px;
   width: 100%;
 
-  p {
+  .slide-track > .slide > p {
     text-align: center;
     font-size: 12px;
   }
 
-  &::before,
-  &::after {
+  &::before {
     @include white-gradient;
     content: "";
     height: 120px;
@@ -121,15 +122,10 @@ $animationSpeed: 40s;
     z-index: 2;
   }
 
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
-
   &::before {
     left: 0;
     top: 0;
+    width: 100%;
   }
 
   .slide-track {
@@ -154,8 +150,7 @@ $animationSpeed: 40s;
 .dark .slider {
   background: $dark-bg2;
 
-  &::before,
-  &::after {
+  &::before {
     @include dark-gradient;
   }
 

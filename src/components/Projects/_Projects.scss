@@ -35,7 +35,7 @@
   align-self: flex-start;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  // height: 400px;
   position: relative;
 
   > * {
@@ -104,11 +104,11 @@
 
       li {
         display: inline;
-        padding: 0.5rem;
+        padding: 0.25rem;
 
         img {
           height: 2rem;
-          width: 2rem;
+          aspect-ratio: 1;
           padding-top: 0.25rem;
         }
       }

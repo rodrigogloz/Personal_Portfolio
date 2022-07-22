@@ -10,9 +10,19 @@
   }
 }
 
+@media (max-width: 700px) {
+  .Header__nav-container {
+    color: #ecf0f1;
+    background: rgba(0, 0, 0, 0.6);
+    // backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+    // z-index: 999;
+  }
+}
+
 .Header__nav {
   display: flex;
-  height: 4rem;
+  height: 4.25rem;
   justify-content: space-between;
   // margin-top: 5px;
   // padding: 0 60px 0 60px;
@@ -76,8 +86,8 @@
     width: 2rem;
     background: transparent;
     aspect-ratio: 1;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     z-index: 9999;
     // filter: invert(1);
     border: none;
@@ -106,6 +116,8 @@
   font-weight: 600;
   margin: 0 1rem 1px 1rem;
   text-align: center;
+
+  z-index: 999;
 }
 
 .Header__nav-ul {
@@ -210,4 +222,13 @@
   -webkit-backdrop-filter: blur(8px);
 
   transition: 1s;
+}
+
+.DarkModeSwitch-container {
+  align-self: center;
+}
+
+@media (max-width: 700px) {
+  .DarkModeSwitch-container {
+  }
 }

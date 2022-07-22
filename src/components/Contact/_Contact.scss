@@ -12,6 +12,8 @@
 
   z-index: 0;
   background-color: $light-bg2;
+
+  border: none;
 }
 
 .dark .Contact__section {
@@ -55,13 +57,17 @@
   }
 }
 
+.Contact__section-content-right {
+  margin-block: auto;
+}
+
 .Contact__section-form-container {
   display: flex;
   align-items: center;
 
-  margin-top: 10vh;
+  // margin-top: 10vh;
 
-  margin: 10vh auto 3vh auto;
+  // margin: 10vh auto 3vh auto;
 
   // margin-top: 10rem;
 
@@ -81,6 +87,8 @@
       margin-bottom: 1rem;
 
       transition: 0.2s;
+
+      background-color: lightgray;
 
       &:focus {
         outline-offset: 2px;

@@ -55,18 +55,10 @@ function useScrollEffect(effect) {
 }
 
 function useScrollProgress(ref) {
-  console.log(
-    "🚀 ~ file: useScrollProgress.js ~ line 58 ~ useScrollProgress ~ ref",
-    ref
-  );
   // create ref to track node's scrollHeight
 
   // state to store the scroll progress
   const [progress, setProgress] = useState(0);
-  console.log(
-    "🚀 ~ file: useScrollProgress.js ~ line 62 ~ useScrollProgress ~ progress",
-    progress
-  );
 
   // let's use the sweet effect :)
   useScrollEffect((scrollPos) => {

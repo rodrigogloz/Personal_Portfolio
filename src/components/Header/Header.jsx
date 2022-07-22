@@ -62,12 +62,7 @@ export const Header = ({ referencia }) => {
     <header>
       <div className="Header__nav-container" ref={headerNavRef}>
         <a className="tag-logo font-subtitle gradient-text" href="#home">
-          &lt;{" "}
-          <span>
-            R<span className="large-name">odrigo</span>G
-            <span className="large-name">loz</span>
-          </span>{" "}
-          /&gt;
+          &lt;<span className="large-name"> RodrigoGloz </span>/&gt;
         </a>
 
         <button
@@ -145,7 +140,9 @@ export const Header = ({ referencia }) => {
             </li>
           </ul>
         </nav>
-        <DarkModeSwitch />
+        <div className="DarkModeSwitch-container">
+          <DarkModeSwitch />
+        </div>
       </div>
     </header>
   );

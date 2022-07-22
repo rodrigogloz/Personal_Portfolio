@@ -3,9 +3,9 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export const Contact = () => {
   const options = {
-    rootMargin: "120px",
+    rootMargin: "50px",
     threshold: 1.0,
-    target: ".Contact__number",
+    target: ".contact-title",
   };
 
   const isIntersecting = useIntersectionObserver(options);
@@ -25,7 +25,7 @@ export const Contact = () => {
 
   return (
     <>
-      <section className="Contact__section" id="contact">
+      <section className="Contact__section section" id="contact">
         <span className="white-grey" />
         <div className="Contact__section-grid section-grid">
           <div className="Contact__section-content-left">
@@ -33,7 +33,7 @@ export const Contact = () => {
               04
             </h2>
             <h1>
-              <span className="gradient-text">Contacto</span>
+              <span className="gradient-text contact-title">Contacto</span>
             </h1>
             <p>
               Contáctame mediante el siguiente formulario y contestaré tan

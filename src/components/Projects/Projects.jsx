@@ -21,9 +21,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Projects = () => {
   const options = {
-    rootMargin: "120px",
+    rootMargin: "50px",
     threshold: 1.0,
-    target: ".Projects__section-grid",
+    target: ".projects-title",
   };
 
   const isIntersecting = useIntersectionObserver(options);
@@ -99,7 +99,7 @@ export const Projects = () => {
               </div>
             </div>
             <div className="project project3">
-              <h2>Calendar App</h2>
+              <h2>Calendar</h2>
               <ul>
                 <li>
                   <img src={logoHTML} alt="HTML logo" aria-hidden="true" />
@@ -166,10 +166,11 @@ export const Projects = () => {
               03
             </h2>
             <h1>
-              <span className="gradient-text">Portfolio</span>
+              <span className="gradient-text projects-title">Portfolio</span>
             </h1>
             <p>
-              Aquí encontrarás algunos de mis proyectos como desarrollador web.
+              Aquí encontrarás algunos de mis proyectos como desarrollador web,
+              con enlaces a los mismos y acceso al código fuente.
             </p>
           </div>
         </div>

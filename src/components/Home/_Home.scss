@@ -111,7 +111,7 @@
     rgb(white, 1)
   );
 
-  transition: background 1s ease;
+  // transition: background 1s ease;
 }
 
 .dark .transparent-div {
@@ -132,13 +132,13 @@
   display: inline-block;
 }
 .line-1 {
-  animation-delay: 2s !important;
+  animation-delay: 1.5s !important;
 }
 .line-2 {
-  animation-delay: 3s !important;
+  animation-delay: 2s !important;
 }
 .line-3 {
-  animation-delay: 4s !important;
+  animation-delay: 2.5s !important;
 }
 .line-gradient {
   background-image: none;
@@ -182,7 +182,7 @@ p .home__fade-in {
   opacity: 0;
 
   animation: fadeIn ease forwards 2s;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 @keyframes homeFadeIn {
