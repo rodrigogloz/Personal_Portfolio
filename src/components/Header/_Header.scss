@@ -1,22 +1,44 @@
-.Header__nav-container {
+.Header__nav-elastic {
   position: fixed;
   width: 100%;
+  height: 70px;
   z-index: 99;
   display: flex;
-  justify-content: space-between;
+  transition: 0.5s;
+  overflow: hidden;
 
   > button {
     cursor: pointer;
   }
+
+  &[data-visible="true"] {
+    height: 100vh;
+
+    .Header__nav-ul {
+      > li {
+        opacity: 1;
+        transition: opacity 1s;
+      }
+    }
+  }
+
+  .Header__nav-container {
+    width: 100%;
+    height: 100%;
+    max-height: 70px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-@media (max-width: 768px) {
-  .Header__nav-container {
+@media (max-width: 1024px) {
+  .Header__nav-elastic {
     color: #ecf0f1;
     background: rgba(0, 0, 0, 0.6);
-    // backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
-    // z-index: 999;
   }
 }
 
@@ -24,109 +46,35 @@
   display: flex;
   height: 4.25rem;
   justify-content: space-between;
-  // margin-top: 5px;
-  // padding: 0 60px 0 60px;
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .Header__nav-ul {
-    height: 100%;
-    position: fixed;
-
-    inset: 0 0 0 0;
-
-    background: rgba(0, 0, 0, 0.8);
-
-    flex-direction: column;
-    padding: min(20vh, 10rem) 2em;
-
-    transform: translateX(100%);
-    transition: transform 0.3s ease-out;
-
-    align-items: center;
-
-    > li {
-      width: fit-content;
-      padding-block: 0.5rem;
-      overflow: hidden;
-    }
-  }
-
-  .Header__nav-ul[data-visible="true"] {
-    transform: translateX(0%);
-  }
-
-  .Header__nav-a {
-    color: white !important;
-    height: 2.5rem !important;
-
-    > span {
-      color: white !important;
-    }
-
-    &::after {
-    }
-  }
-
-  @supports (backdrop-filter: blur(10px)) {
-    .Header__nav-ul {
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    position: absolute;
-    width: 2rem;
-    background: transparent;
-    aspect-ratio: 1;
-    top: 1rem;
-    right: 1rem;
-    z-index: 9999;
-    // filter: invert(1);
-    border: none;
-    overflow: hidden;
-
-    > * {
-      color: white;
-      height: 2rem;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .Header__nav-ul a > [aria-hidden] {
-    display: none;
-  }
-  .large-name {
-    display: none;
-  }
-}
-
-.tag-logo {
-  align-self: center;
-  cursor: pointer;
-  font-size: 26px;
-  font-weight: 600;
-  margin: 0 1rem 1px 1rem;
-  text-align: center;
-
-  z-index: 999;
 }
 
 .Header__nav-ul {
   display: flex;
   gap: 2rem;
+  overflow: hidden;
 
   span {
     color: white;
     font-weight: 400;
+  }
+
+  @media (max-width: 1024px) {
+    height: 100vh;
+    position: fixed;
+    inset: 0 0 0 0;
+    flex-direction: column;
+    transition: transform 0.3s ease-out;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+
+    > li {
+      width: fit-content;
+      padding-block: 0.5rem;
+      overflow: hidden;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
   }
 }
 
@@ -142,6 +90,9 @@
     margin-right: 8px;
     color: black;
     transition: 1s;
+    @media (max-width: 1024px) {
+      color: white;
+    }
   }
 
   &.active {
@@ -166,17 +117,50 @@
       position: absolute;
       transform-origin: bottom left;
       transform: scaleX(0);
-      // transition: transform 0.4s ease-out;
       width: 100%;
     }
 
-    // &:hover::after,
     &.active::after {
       transform-origin: bottom left;
       transform: scaleX(1);
-      // transition: transform 0.3s ease-out;
     }
   }
+
+  @media (max-width: 1024px) {
+    color: darken($color: white, $amount: 30);
+  }
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    background: transparent;
+    aspect-ratio: 1;
+    right: 1rem;
+    z-index: 9999;
+    border: none;
+    overflow: hidden;
+
+    > * {
+      color: white;
+      height: 2rem;
+    }
+  }
+}
+
+.tag-logo {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-align: center;
+  z-index: 999;
 }
 
 .dark .Header__nav-a {
@@ -220,15 +204,4 @@
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(8px);
-
-  transition: 1s;
-}
-
-.DarkModeSwitch-container {
-  align-self: center;
-}
-
-@media (max-width: 768px) {
-  .DarkModeSwitch-container {
-  }
 }
