@@ -11,10 +11,8 @@
   border-radius: 1rem;
   align-items: center;
   justify-content: space-between;
-
   height: 1.25rem;
   width: 2.6rem;
-
   margin: 0 1rem 0 1rem;
 
   &::after {
@@ -53,6 +51,10 @@
     display: block;
     color: white;
     background: none;
+  }
+
+  @media (max-width: 1024px) {
+    margin-right: 4rem;
   }
 }
 
