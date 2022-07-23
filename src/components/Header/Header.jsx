@@ -1,9 +1,6 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useRef } from "react";
 import { DarkModeSwitch } from "../Utils/DarkModeSwitch";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { HamburgerMenu } from "./HamburgerMenu";
 
 export const Header = () => {
   useEffect(() => {
@@ -45,20 +42,6 @@ export const Header = () => {
     };
   }, []);
 
-  const navToggle = useRef();
-
-  const toggleNavbar = () => {
-    const visibility = headerNavRef.current.getAttribute("data-visible");
-
-    if (visibility === "false") {
-      headerNavRef.current.setAttribute("data-visible", true);
-      navToggle.current.setAttribute("area-expanded", true);
-    } else {
-      headerNavRef.current.setAttribute("data-visible", false);
-      navToggle.current.setAttribute("area-expanded", false);
-    }
-  };
-
   const closeMobileNav = () => {
     const visibility = headerNavRef.current.getAttribute("data-visible");
 
@@ -84,7 +67,7 @@ export const Header = () => {
               <li>
                 <a
                   href="#home"
-                  className="Header__nav-a hover-underline font-subtitle home"
+                  className="Header__nav-a hover-underline font-subtitle home active"
                   onClick={closeMobileNav}
                 >
                   <span aria-hidden="true" className="inter">
@@ -145,16 +128,7 @@ export const Header = () => {
           </nav>
 
           <DarkModeSwitch />
-          <button
-            className="mobile-nav-toggle"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-            ref={navToggle}
-            onClick={toggleNavbar}
-          >
-            <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-            <span className="sr-only">Menu</span>
-          </button>
+          <HamburgerMenu navRef={headerNavRef} />
         </div>
       </div>
     </header>
