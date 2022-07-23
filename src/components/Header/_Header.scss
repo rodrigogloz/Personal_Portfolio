@@ -26,6 +26,10 @@
       margin: 0 1rem;
       text-align: center;
       z-index: 999;
+
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
 
     // LISTADO DE LA NAVEGACIÓN
@@ -89,7 +93,12 @@
 
           @media (max-width: 1024px) {
             color: darken($color: white, $amount: 30);
+            padding: 1rem;
             &:hover {
+              color: white;
+            }
+
+            &.active {
               color: white;
             }
           }
@@ -103,7 +112,7 @@
           transition: transform 0.3s ease-out;
           align-items: center;
           justify-content: center;
-          gap: 3.5rem;
+          gap: 1.5rem;
 
           > li {
             width: fit-content;
