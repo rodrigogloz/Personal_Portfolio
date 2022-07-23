@@ -59,21 +59,13 @@
     rgb($dark-bg, 0.4) 70%,
     rgb($dark-bg, 1)
   );
-
-  // transition: 0.5s;
 }
 
 .home__section-grid {
-  align-self: flex-start;
   display: flex;
-  min-height: 400px;
-  margin-block: 22vh;
-  margin-inline: $section-margin-inline;
-
   max-width: 68rem;
   place-items: center;
   position: relative;
-
   z-index: 2;
 }
 
