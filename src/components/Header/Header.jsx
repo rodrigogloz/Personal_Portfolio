@@ -46,6 +46,8 @@ export const Header = () => {
     const visibility = headerNavRef.current.getAttribute("data-visible");
 
     if (visibility === "true") {
+      const menu = document.querySelector(".hamburger-menu-button");
+      menu.classList.remove("open");
       headerNavRef.current.setAttribute("data-visible", false);
     }
   };
