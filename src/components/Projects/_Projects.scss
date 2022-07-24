@@ -13,10 +13,6 @@
   background-color: white;
 }
 
-.dark .Projects__section {
-  background-color: $dark-bg;
-}
-
 .Projects__section-grid {
   align-self: flex-start;
   display: grid;
@@ -54,8 +50,7 @@
   .project {
     display: flex;
     justify-content: space-between;
-    // cursor: pointer;
-    height: 100%;
+    flex-basis: 75px;
     transition: 0.5s;
     padding: 1rem;
     align-items: center;
@@ -73,24 +68,19 @@
       left: 0px;
       background-image: url("../../assets/imagen-cover-provisional.jpg");
       background-size: cover;
-      // background-position: center;
-      // background-attachment: fixed;
-      opacity: 20%;
       z-index: -1;
+      transition: all 0.5s ease-in-out;
     }
 
     h2 {
       transition: 0.5s;
       color: white;
-      // background: $gradient;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
     }
 
     ul {
       overflow: hidden;
       transition: 0.5s;
-      background-color: $translucid-grey;
+      background-color: #b3b3b32b;
       backdrop-filter: blur(10px);
       padding-inline: 0.5rem;
       border-radius: 50px;
@@ -103,6 +93,10 @@
           height: 2rem;
           aspect-ratio: 1;
           padding-top: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+          padding: 0;
         }
       }
     }
@@ -122,15 +116,29 @@
       padding-inline: 0.5rem;
       overflow: hidden;
       transition: 0.5s;
-      background-color: $translucid-grey;
       backdrop-filter: blur(10px);
       border-radius: 50px;
       display: flex;
       gap: 1.5rem;
       opacity: 0;
+      transform: translateY(10rem);
 
       a {
         color: white;
+        padding: 0.25rem 1rem;
+        border-radius: 50px;
+        background-color: #b3b3b32b;
+        transition: all 0.3s ease-in-out;
+        font-weight: 400;
+
+        &:hover {
+          color: black;
+          background: white;
+        }
+
+        @media (max-width: 1024px) {
+          font-size: 0.9rem;
+        }
       }
       a > * {
         height: 1rem;
@@ -140,39 +148,46 @@
     }
 
     &:hover {
-      height: 500%;
+      flex-basis: 200px;
 
       h2 {
-        transform: translateY(-210%);
         transition: 0.5s;
-        // opacity: 0;
+        align-self: start;
       }
+
       ul {
-        transform: translateY(-150%);
         transition: 0.5s;
-        // opacity: 0;
+        align-self: start;
       }
+
       p {
         transition: 0.5s;
         opacity: 1;
       }
 
-      &::before {
-        opacity: 90%;
-      }
-
       .project-links-container {
         opacity: 1;
+        transform: translateY(0);
       }
     }
   }
+}
 
-  .project1 {
-  }
-  .project2 {
-  }
-  .project3 {
-  }
-  .project4 {
+// DARK MODE
+
+.dark {
+  .Projects__section {
+    background-color: $dark-bg;
+    .project {
+      &::before {
+        opacity: 1;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 0.6;
+        }
+      }
+    }
   }
 }
