@@ -68,8 +68,8 @@ export const About = () => {
               <span className="gradient-text about-title">Sobre mí</span>
             </h1>
             <p>
-              Datos de interés sobre mi persona, mi background y mi perfil
-              profesional.
+              Una pequeña introducción con datos de interés sobre mi persona, mi
+              background y mi perfil profesional.
             </p>
           </div>
         </div>

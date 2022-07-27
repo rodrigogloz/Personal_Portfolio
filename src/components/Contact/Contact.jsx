@@ -36,8 +36,8 @@ export const Contact = () => {
               <span className="gradient-text contact-title">Contacto</span>
             </h1>
             <p>
-              Contáctame mediante el siguiente formulario y contestaré tan
-              pronto como sea posible.
+              Para cualquier consulta, contáctame mediante el siguiente
+              formulario y contestaré tan pronto como sea posible.
             </p>
           </div>
           <div className="Contact__section-content-right">

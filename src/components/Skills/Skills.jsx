@@ -46,8 +46,8 @@ export const Skills = () => {
               <span className="gradient-text skills-title">Competencias</span>
             </h1>
             <p>
-              Mis competencias profesionales, herramientas y lenguajes con los
-              que desarrollo mis proyectos.
+              Mis competencias profesionales, herramientas y lenguajes de
+              programación con los que desarrollo mis proyectos.
             </p>
           </div>
           <div className="Skills__section-content-right">
