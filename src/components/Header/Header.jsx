@@ -128,9 +128,10 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
-
-          <DarkModeSwitch />
-          <HamburgerMenu navRef={headerNavRef} />
+          <div className="mobile-buttons-container">
+            <DarkModeSwitch />
+            <HamburgerMenu navRef={headerNavRef} />
+          </div>
         </div>
       </div>
     </header>
