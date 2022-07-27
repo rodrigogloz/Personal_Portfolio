@@ -65,9 +65,11 @@
 
 @mixin white-gradient {
   background: linear-gradient(
-    to right,
+    90deg,
     $light-bg2 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(9, 9, 9, 0) 25%,
+    rgba(14, 14, 14, 0) 75%,
+    $light-bg2 100%
   );
 }
 
