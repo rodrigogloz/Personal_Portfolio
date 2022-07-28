@@ -44,10 +44,6 @@ body {
   }
 }
 
-.sr-only {
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -75,12 +71,79 @@ button {
   font-weight: 500;
 }
 
+// GENERAL CLASSES:
+
+.sr-only {
+  display: none;
+}
+
+.external-link-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.external-link {
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 50px;
+  background-color: $grey-lm;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid $grey-lm;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: black;
+    background: white;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 0.9rem;
+  }
+}
+
+.dark .external-link {
+  background-color: $grey-dm;
+  border: 1px solid $grey-dm;
+  &:hover {
+    color: black;
+    background: white;
+  }
+}
+
+// MEDIA QUERIES:
+
 @media (min-width: 1024px) {
   section.section {
     min-height: 100vh;
   }
-}
 
+  .section .About__section-content-right,
+  .section .Skills__section-content-left,
+  .section .Projects__section-content-right,
+  .section .Contact__section-content-left {
+    overflow: hidden;
+    p {
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin-top: 4rem;
+    }
+
+    .big-number {
+      top: 3.5rem;
+    }
+  }
+
+  .section .Skills__section-content-left,
+  .section .Contact__section-content-left {
+    .external-link-container {
+      justify-content: end;
+    }
+  }
+}
 @media (min-width: 1024px) and (max-width: 1024px) {
   h1 {
     font-size: 2.5rem;
@@ -126,14 +189,15 @@ button {
   .section .Skills__section-content-left,
   .section .Projects__section-content-right,
   .section .Contact__section-content-left {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
     h1 {
       margin: 8rem 0 1rem 0;
     }
 
     p {
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid grey;
+      margin-bottom: 1rem;
     }
   }
 
@@ -183,14 +247,15 @@ button {
   .section .Skills__section-content-left,
   .section .Projects__section-content-right,
   .section .Contact__section-content-left {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
     h1 {
       margin: 8rem 0 1rem 0;
     }
 
     p {
-      margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid grey;
+      margin-bottom: 1rem;
     }
   }
 

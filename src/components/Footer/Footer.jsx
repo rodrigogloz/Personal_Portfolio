@@ -17,9 +17,7 @@ export const Footer = () => {
         <a href="/">Política de privacidad</a>
         <a href="/">Uso de cookies</a>
       </div>
-      <p className="Footer__copyright">
-        <span className="inter">© 2022</span> Rodrigo Ezequiel Gloz
-      </p>
+      <p className="Footer__copyright">© 2022 Rodrigo Ezequiel Gloz</p>
     </div>
   );
 };
