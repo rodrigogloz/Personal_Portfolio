@@ -172,6 +172,15 @@ export const Projects = () => {
               Aquí encontrarás algunos de mis proyectos como desarrollador web,
               con enlaces a los mismos y acceso al código fuente.
             </p>
+            <div className="external-link-container">
+              <a
+                className="external-link"
+                href="https://github.com/rodrigogloz"
+                target="_blank"
+              >
+                GitHub <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+              </a>
+            </div>
           </div>
         </div>
       </section>

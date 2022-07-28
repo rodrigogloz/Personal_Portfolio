@@ -14,6 +14,9 @@ import logoJest from "../../assets/logos/jest-logo.svg";
 import logoMongoDB from "../../assets/logos/mongodb-logo.svg";
 import logoFirebase from "../../assets/logos/firebase-logo.svg";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export const Skills = () => {
   const options = {
@@ -49,6 +52,26 @@ export const Skills = () => {
               Mis competencias profesionales, herramientas y lenguajes de
               programación con los que desarrollo mis proyectos.
             </p>
+            <div className="external-link-container">
+              <a
+                className="external-link"
+                href="https://platzi.com/p/rodrigoeg/"
+                target="_blank"
+              >
+                Perfil en Platzi{" "}
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                ></FontAwesomeIcon>
+              </a>
+              <a
+                className="external-link"
+                href="https://www.linkedin.com/in/rodrigo-gloz/"
+                target="_blank"
+              >
+                Mi Linkedin{" "}
+                <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+              </a>
+            </div>
           </div>
           <div className="Skills__section-content-right">
             <p>

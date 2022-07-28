@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const About = () => {
   const options = {
@@ -71,6 +73,18 @@ export const About = () => {
               Una pequeña introducción con datos de interés sobre mi persona, mi
               background y mi perfil profesional.
             </p>
+            <div className="external-link-container">
+              <a
+                className="external-link"
+                href="https://www.linkedin.com/in/rodrigo-gloz/"
+                target="_blank"
+              >
+                Accede a mi CV{" "}
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                ></FontAwesomeIcon>
+              </a>
+            </div>
           </div>
         </div>
         {/* <div className="About__section-footer">
