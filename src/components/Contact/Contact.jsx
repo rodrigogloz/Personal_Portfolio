@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   const options = {
@@ -53,7 +54,8 @@ export const Contact = () => {
           </div>
           <div className="Contact__section-content-right">
             <div className="Contact__section-form-container">
-              <form autoComplete="none" action="">
+              <ContactForm />
+              {/* <form autoComplete="none" action="">
                 <input
                   autoComplete="none"
                   type="text"
@@ -84,9 +86,9 @@ export const Contact = () => {
                 />
                 <div className="form-bottom">
                   <div>
-                    {/* <p>
+                    <p>
                       <span>*</span> campo requerido
-                    </p> */}
+                    </p>
                   </div>
                   <input
                     // className="gradient-div"
@@ -95,7 +97,7 @@ export const Contact = () => {
                     onClick={handleSubmit}
                   />
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>

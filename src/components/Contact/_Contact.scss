@@ -147,3 +147,8 @@
     }
   }
 }
+
+textarea.has-error,
+input.has-error {
+  border: 2px solid red !important;
+}
