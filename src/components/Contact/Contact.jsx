@@ -3,6 +3,7 @@ import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { ContactForm } from "./ContactForm";
+import { FormikTest } from "./FormikTest.tsx";
 
 export const Contact = () => {
   const options = {
@@ -54,7 +55,8 @@ export const Contact = () => {
           </div>
           <div className="Contact__section-content-right">
             <div className="Contact__section-form-container">
-              <ContactForm />
+              <FormikTest />
+              {/* <ContactForm /> */}
               {/* <form autoComplete="none" action="">
                 <input
                   autoComplete="none"
