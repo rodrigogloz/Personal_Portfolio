@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { ContactForm } from "./ContactForm";
-import { FormikTest } from "./FormikTest.tsx";
+import { ContactForm } from "./ContactForm.tsx";
 
 export const Contact = () => {
   const options = {
@@ -22,10 +21,6 @@ export const Contact = () => {
       number.classList.remove("active");
     }
   }, [isIntersecting]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
 
   return (
     <>
@@ -55,51 +50,7 @@ export const Contact = () => {
           </div>
           <div className="Contact__section-content-right">
             <div className="Contact__section-form-container">
-              <FormikTest />
-              {/* <ContactForm /> */}
-              {/* <form autoComplete="none" action="">
-                <input
-                  autoComplete="none"
-                  type="text"
-                  name="name"
-                  className="glass"
-                  placeholder="Nombre"
-                />
-                <input
-                  autoComplete="none"
-                  type="email"
-                  name="email"
-                  className="glass"
-                  placeholder="Correo electrónico"
-                />
-                <input
-                  autoComplete="none"
-                  type="subject"
-                  name="subject"
-                  className="glass"
-                  placeholder="Asunto"
-                />
-                <textarea
-                  name="message"
-                  cols="30"
-                  rows="8"
-                  className="glass form-message"
-                  placeholder="Escribe aquí tu mensaje"
-                />
-                <div className="form-bottom">
-                  <div>
-                    <p>
-                      <span>*</span> campo requerido
-                    </p>
-                  </div>
-                  <input
-                    // className="gradient-div"
-                    type="submit"
-                    value="Enviar mensaje"
-                    onClick={handleSubmit}
-                  />
-                </div>
-              </form> */}
+              <ContactForm />
             </div>
           </div>
         </div>

@@ -61,16 +61,15 @@
   display: flex;
   align-items: center;
 
-  // margin-top: 10vh;
-
-  // margin: 10vh auto 3vh auto;
-
-  // margin-top: 10rem;
-
   form {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+
+    span {
+      color: rgb(255, 66, 66);
+      margin-bottom: 0.25rem;
+    }
 
     input,
     textarea {
@@ -92,63 +91,19 @@
       }
     }
 
-    :first-child {
-      width: calc(50% - 0.5rem);
-      height: fit-content;
-    }
+    button {
+      cursor: pointer;
+      padding: 0.5rem 1.25rem;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      background: $gradient;
 
-    :nth-child(2) {
-      width: calc(50% - 0.5rem);
-      margin-left: auto;
-      height: fit-content;
-    }
-
-    :nth-child(3) {
-      width: 100%;
-      height: fit-content;
-    }
-
-    :nth-child(4) {
-      width: 100%;
-      height: fit-content;
-    }
-
-    :nth-child(5) {
-      width: 100%;
-      display: flex;
-
-      span {
-        color: red;
-        font-family: "inter";
-        font-size: 1.25rem;
-      }
-
-      p {
-        color: grey;
-        font-size: 1rem;
-      }
-
-      > input {
-        cursor: pointer;
-        width: fit-content;
-        height: fit-content;
-        padding: 0.5rem 1.5rem;
-        border-radius: 0.3rem;
-        border-style: none;
-        opacity: 100%;
-        color: white;
-
-        background-image: $gradient;
-
-        &:focus {
-          box-shadow: none;
-        }
+      &:hover {
+        background: $accent;
       }
     }
   }
-}
-
-textarea.has-error,
-input.has-error {
-  border: 2px solid red !important;
 }
