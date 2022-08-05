@@ -29,6 +29,7 @@ export const DarkModeSwitch = () => {
       className={`themeSwitch ${theme === "dark" ? "dark" : ""}`}
       onClick={handleClick}
       ref={themeSwitch}
+      aria-label="dark mode switch"
     >
       <span>
         <FontAwesomeIcon icon={faSun}></FontAwesomeIcon>

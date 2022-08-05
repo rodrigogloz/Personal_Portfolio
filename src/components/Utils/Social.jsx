@@ -11,7 +11,10 @@ export const Social = () => {
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/rodrigo-gloz/">
+        <a
+          href="https://www.linkedin.com/in/rodrigo-gloz/"
+          className="Social__icon"
+        >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </li>

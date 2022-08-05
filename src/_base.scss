@@ -83,7 +83,7 @@ button {
 }
 
 .external-link {
-  color: white;
+  color: black;
   padding: 0.25rem 1rem;
   border-radius: 50px;
   background-color: $grey-lm;
@@ -107,6 +107,7 @@ button {
 .dark .external-link {
   background-color: $grey-dm;
   border: 1px solid $grey-dm;
+  color: white;
   &:hover {
     color: black;
     background: white;
