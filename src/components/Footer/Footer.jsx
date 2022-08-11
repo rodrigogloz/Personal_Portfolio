@@ -6,10 +6,10 @@ export const Footer = () => {
   return (
     <div className="Footer__section">
       <div className="Footer__social">
-        <a href="https://github.com/rodrigogloz">
+        <a href="https://github.com/rodrigogloz" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://www.linkedin.com/in/rodrigo-gloz/">
+        <a href="https://www.linkedin.com/in/rodrigo-gloz/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
