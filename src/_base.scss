@@ -144,26 +144,10 @@ button {
       justify-content: end;
     }
   }
-}
-@media (min-width: 1024px) and (max-width: 1024px) {
-  h1 {
-    font-size: 2.5rem;
-  }
 
-  p {
-    font-size: 18px;
-  }
-
-  div .section-grid {
-    gap: 3rem;
-  }
-
-  h2.big-number {
-    font-size: 12rem;
-  }
-
-  section.section {
-    padding-inline: 2rem;
+  .section .Projects__section-content-left {
+    height: 612px;
+    justify-content: center;
   }
 }
 
@@ -205,6 +189,10 @@ button {
   .section .About__section-grid,
   .section .Projects__section-grid {
     flex-direction: column-reverse;
+  }
+
+  .section .Projects__section-content-left {
+    // height: auto;
   }
 
   div .section-grid {
