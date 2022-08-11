@@ -11,8 +11,8 @@ import logoLinux from "../../assets/logos/linux-logo.svg";
 import logoVSCode from "../../assets/logos/vscode-logo.svg";
 import logoNPM from "../../assets/logos/npm-logo.svg";
 import logoJest from "../../assets/logos/jest-logo.svg";
-import logoMongoDB from "../../assets/logos/mongodb-logo.svg";
-import logoFirebase from "../../assets/logos/firebase-logo.svg";
+import logoTS from "../../assets/logos/typescript.png";
+import logoCommandLine from "../../assets/logos/command-line.png";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -75,21 +75,23 @@ export const Skills = () => {
           </div>
           <div className="Skills__section-content-right">
             <p>
-              Principalmente mis competencias se centran en el desarrollo
+              Mis competencias se centran principalmente en el desarrollo
               Front-End, siendo mis herramientas principales HTML, CSS y
               JavaScript con ReactJS.
               <br />
               <br />
-              También poseo conocimientos en Firebase, gestión de dependencias
-              mediante NPM, control de versiones mediante Git, testing con Jest
-              o manejo de preprocesadores como SASS, entre otras herramientas.
+              También poseo conocimientos en el uso de la terminal, gestión de
+              dependencias mediante NPM, control de versiones mediante Git,
+              testing con Jest o manejo de preprocesadores como SASS, entre
+              otras herramientas.
               <br />
               <br />
-              Actualmente me encuentro ampliando mis conocimientos en React,
-              aprendiendo nuevos Frameworks dentro del mismo como Next.js.
+              Me encuentro en constante aprendizaje, expandiendo mis
+              conocimientos en React y aprendiendo nuevas librerías así como
+              creando nuevos proyectos.
               <br />
               <br />A continuación encontrarás una lista de las principales
-              herramientas con las que he trabajado hasta la fecha:
+              herramientas y lenguajes con las que he trabajado hasta la fecha:
             </p>
             <div className="slider">
               <div className="slide-track">
@@ -106,6 +108,15 @@ export const Skills = () => {
                   <p>JavaScript</p>
                 </div>
                 <div className="slide">
+                  <img
+                    src={logoTS}
+                    alt="TypeScript logo"
+                    aria-hidden="true"
+                    className="logoTS"
+                  />
+                  <p>TypeScript</p>
+                </div>
+                <div className="slide">
                   <img src={logoReact} alt="React logo" aria-hidden="true" />
                   <p>React</p>
                 </div>
@@ -117,21 +128,14 @@ export const Skills = () => {
                   <img src={logoSass} alt="SASS logo" aria-hidden="true" />
                   <p>SASS</p>
                 </div>
+
                 <div className="slide">
                   <img
-                    src={logoMongoDB}
-                    alt="MongoDB logo"
+                    src={logoCommandLine}
+                    alt="Command line logo"
                     aria-hidden="true"
                   />
-                  <p>MongoDB</p>
-                </div>
-                <div className="slide">
-                  <img
-                    src={logoFirebase}
-                    alt="Firebase logo"
-                    aria-hidden="true"
-                  />
-                  <p>Firebase</p>
+                  <p>Command line</p>
                 </div>
                 <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
@@ -175,6 +179,16 @@ export const Skills = () => {
                   <p>JavaScript</p>
                 </div>
                 <div className="slide">
+                  <img
+                    src={logoTS}
+                    alt="TypeScript logo"
+                    aria-hidden="true"
+                    className="logoTS"
+                  />
+
+                  <p>TypeScript</p>
+                </div>
+                <div className="slide">
                   <img src={logoReact} alt="React logo" aria-hidden="true" />
                   <p>React</p>
                 </div>
@@ -186,21 +200,14 @@ export const Skills = () => {
                   <img src={logoSass} alt="SASS logo" aria-hidden="true" />
                   <p>SASS</p>
                 </div>
+
                 <div className="slide">
                   <img
-                    src={logoMongoDB}
-                    alt="MongoDB logo"
+                    src={logoCommandLine}
+                    alt="Command line logo"
                     aria-hidden="true"
                   />
-                  <p>MongoDB</p>
-                </div>
-                <div className="slide">
-                  <img
-                    src={logoFirebase}
-                    alt="Firebase logo"
-                    aria-hidden="true"
-                  />
-                  <p>Firebase</p>
+                  <p>Command line</p>
                 </div>
                 <div className="slide">
                   <img src={logoVSCode} alt="VSCode logo" aria-hidden="true" />
