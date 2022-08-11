@@ -5,7 +5,7 @@ Proyecto para portfolio personal de desarrollador Front-End.
 En él encontrarás varias secciones con información relevante acerca de mi perfil profesional, así como mis proyectos de los cuales 
 ya se ha realizado el despliegue en la web.
 
-El proyecto está desarrollado con los lenguajes HTML5, CSS3, JavaScript (ES7) y TypeScript.
+El proyecto está desarrollado con los lenguajes HTML5, SCSS, JavaScript (ES7) y TypeScript.
 
 Desde la integridad del diseño del proyecto, su maquetación, así como las lógicas implementadas, han sido construídas y diseñadas 
 personalmente desde cero a partir de Create React App.
