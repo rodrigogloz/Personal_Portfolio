@@ -1,4 +1,4 @@
-// CABECERA
+// HEADER
 .Header__nav-elastic {
   position: fixed;
   width: 100%;
@@ -8,7 +8,7 @@
   transition: 0.5s;
   overflow: hidden;
 
-  // NAVEGACIÓN
+  // NAVIGATION
   .Header__nav-container {
     width: 100%;
     height: 100%;
@@ -36,7 +36,7 @@
       }
     }
 
-    // LISTADO DE LA NAVEGACIÓN
+    // NAVIGATION LIST
     .Header__nav {
       display: flex;
       height: 4.25rem;
@@ -129,7 +129,7 @@
       }
     }
 
-    // MENÚ HAMBURGUESA
+    // HAMBURGER MENU
     .hamburger-menu-button {
       display: none;
       width: 60px;
@@ -215,7 +215,7 @@
     }
   }
 
-  // ESTILOS MENÚ DESPLEGADO
+  // TOGGLED MENU STYLES
   &[data-visible="true"] {
     height: 100vh;
 

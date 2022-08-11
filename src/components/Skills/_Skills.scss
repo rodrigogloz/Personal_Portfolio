@@ -5,10 +5,8 @@
   background-size: cover;
   display: grid;
   justify-content: center;
-  // min-height: 100vh;
   position: relative;
   width: 100%;
-
   z-index: 0;
   background-color: $light-bg2;
 }
@@ -38,14 +36,12 @@
   h1 {
     margin-bottom: 1rem;
     margin-top: 10rem;
-
     text-align: right;
   }
 
   p {
     margin-bottom: 6rem;
     font-weight: 200;
-
     text-align: right;
   }
 }
@@ -102,7 +98,6 @@ $animationSpeed: 40s;
   margin: auto;
   overflow: hidden;
   position: relative;
-  // width: 960px;
   width: 100%;
 
   .slide-track > .slide > p {

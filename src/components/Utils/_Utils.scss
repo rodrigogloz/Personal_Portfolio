@@ -58,16 +58,14 @@
   }
 }
 
-// Social::
+// Social:
 
 .Social {
   position: fixed;
   z-index: 10;
   justify-self: center;
-
   top: 50%;
   left: 1.5rem;
-
   display: none;
 
   li {
@@ -79,7 +77,6 @@
     color: $grey-lm;
     height: 3rem;
     width: 3rem;
-
     transition: 0.5s;
 
     > * {
@@ -108,7 +105,6 @@
     color: $grey-dm;
     height: 3rem;
     width: 3rem;
-
     transition: 0.5s;
 
     > * {

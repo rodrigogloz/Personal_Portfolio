@@ -19,7 +19,6 @@ export const Home = () => {
                 .
               </h1>
             </div>
-            {/* <hr /> */}
             <p>
               <span className="home__fade-in home__line-1">
                 En esta página encontrarás información sobre mí y sobre mis

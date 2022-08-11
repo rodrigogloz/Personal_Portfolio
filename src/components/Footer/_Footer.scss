@@ -1,26 +1,18 @@
 .Footer__section {
   background-color: $translucid-grey;
-  // background-color: $gradient;
-  // min-height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem 60px 1rem 60px;
   min-height: 20vh;
-
   background-color: lighten($color: $grey-dm, $amount: 5);
-
-  > * {
-  }
 
   .Footer__social {
     margin-bottom: 1rem;
     display: flex;
     width: 100%;
     justify-content: center;
-
-    // display: none;
 
     > a {
       height: fit-content;
@@ -38,7 +30,6 @@
 
       &:hover {
         color: darken($color: white, $amount: 50);
-
         transition: 0.5s;
       }
     }
@@ -56,13 +47,11 @@
     > a {
       color: $dark-bg;
       color: white;
-
       margin-inline: 1rem;
       transition: 1s;
 
       &:hover {
         color: darken($color: white, $amount: 50);
-
         transition: 0.5s;
       }
     }

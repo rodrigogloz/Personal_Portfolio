@@ -3,11 +3,9 @@ import React, { useRef } from "react";
 export const HamburgerMenu = ({ navRef }) => {
   const navToggle = useRef();
   const toggleNavbar = () => {
-    // TOGGLE MENU BUTTON ANIMATION
     const menu = document.querySelector(".hamburger-menu-button");
     menu.classList.toggle("open");
 
-    // EXPAND/FOLD MENU
     const visibility = navRef.current.getAttribute("data-visible");
 
     if (visibility === "false") {
