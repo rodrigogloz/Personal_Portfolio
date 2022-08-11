@@ -58,13 +58,19 @@ export const Projects = () => {
               </ul>
               <p>Aplicación de lista de tareas hecha con React.</p>
               <div className="project-links-container">
-                <a href="/">
+                <a
+                  href="https://rodrigogloz.github.io/ToDo-App/"
+                  target="_blank"
+                >
                   Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
-                <a href="/">
+                <a
+                  href="https://github.com/rodrigogloz/ToDo-App"
+                  target="_blank"
+                >
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
@@ -87,13 +93,13 @@ export const Projects = () => {
                 Giphy
               </p>
               <div className="project-links-container">
-                <a href="/">
+                <a href="https://rodrigogloz.github.io/GifApp/" target="_blank">
                   Ir al proyecto{" "}
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
                   ></FontAwesomeIcon>
                 </a>
-                <a href="/">
+                <a href="https://github.com/rodrigogloz/GifApp" target="_blank">
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>
@@ -155,7 +161,10 @@ export const Projects = () => {
                 construída desde cero con React.
               </p>
               <div className="project-links-container">
-                <a href="/">
+                <a
+                  href="https://github.com/rodrigogloz/Personal_Portfolio"
+                  target="_blank"
+                >
                   Ver código <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
                 </a>
               </div>

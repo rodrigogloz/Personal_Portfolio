@@ -58,6 +58,10 @@
     background-size: cover;
     background-color: $translucid-grey;
 
+    &.project3 {
+      display: none;
+    }
+
     &::before {
       content: "";
       position: absolute;
