@@ -20,7 +20,7 @@ El formulario de contacto está construído en TypeScript mediante el uso de For
 
 Para visitar el portfolio, accede mediante el siguiente enlace:
 
-(PLACEHOLDER)
+https://rodrigoglozdev.com
 
 
 Hecho con mucho cariño y dedicación.
