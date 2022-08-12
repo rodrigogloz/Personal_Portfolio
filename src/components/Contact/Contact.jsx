@@ -38,6 +38,10 @@ export const Contact = () => {
               Para cualquier consulta, contáctame a través del siguiente
               formulario o mediante mi perfil de Linkedin.
             </p>
+            <p className="has-error">
+              Formulario temporalmente deshabilitado. Por favor, contactar
+              mediante Linkedin.
+            </p>
             <div className="external-link-container">
               <a
                 className="external-link"

@@ -323,6 +323,11 @@ button {
   display: none;
 }
 
+.has-error {
+  color: red;
+  font-weight: 600 !important;
+}
+
 // Section numbers:
 
 .big-number {
