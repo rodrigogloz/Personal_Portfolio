@@ -76,8 +76,9 @@ export const About = () => {
             <div className="external-link-container">
               <a
                 className="external-link"
-                href="https://www.linkedin.com/in/rodrigo-gloz/"
+                href="https://rodrigoglozdev.com/files/curriculum-rodrigogloz.pdf"
                 target="_blank"
+                type="application/pdf"
               >
                 Accede a mi CV{" "}
                 <FontAwesomeIcon
