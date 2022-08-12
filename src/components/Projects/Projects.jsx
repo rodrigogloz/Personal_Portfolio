@@ -1,19 +1,11 @@
 import React, { useEffect } from "react";
 import logoHTML from "../../assets/logos/html-logo.svg";
 import logoCSS from "../../assets/logos/css-logo.svg";
-import logoJS from "../../assets/logos/javascript-logo.svg";
 import logoSass from "../../assets/logos/sass-logo.svg";
 import logoReact from "../../assets/logos/react-logo.svg";
-import logoRedux from "../../assets/logos/redux-logo.svg";
-import logoGit from "../../assets/logos/git-logo.svg";
-import logoGitHub from "../../assets/logos/github-logo.svg";
-import logoLinux from "../../assets/logos/linux-logo.svg";
-import logoVSCode from "../../assets/logos/vscode-logo.svg";
-import logoNPM from "../../assets/logos/npm-logo.svg";
-import logoJest from "../../assets/logos/jest-logo.svg";
 import logoMongoDB from "../../assets/logos/mongodb-logo.svg";
 import logoNode from "../../assets/logos/node-logo.svg";
-import logoFirebase from "../../assets/logos/firebase-logo.svg";
+import logoFormik from "../../assets/logos/formik.svg";
 import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -154,6 +146,9 @@ export const Projects = () => {
                 </li>
                 <li>
                   <img src={logoReact} alt="React logo" aria-hidden="true" />
+                </li>
+                <li>
+                  <img src={logoFormik} alt="Formik logo" aria-hidden="true" />
                 </li>
               </ul>
               <p>

@@ -55,8 +55,8 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-size: cover;
-    background-color: $translucid-grey;
+    background-size: auto;
+    background-color: $grey-lm;
 
     &.project3 {
       display: none;
@@ -69,7 +69,6 @@
       right: 0px;
       bottom: 0px;
       left: 0px;
-      background-image: url("../../assets/imagen-cover-provisional.jpg");
       background-size: cover;
       z-index: -1;
       transition: all 0.5s ease-in-out;
@@ -77,13 +76,13 @@
 
     h2 {
       transition: 0.5s;
-      color: white;
+      color: $grey-dm;
     }
 
     ul {
       overflow: hidden;
       transition: 0.5s;
-      background-color: #b3b3b32b;
+      background-color: rgb(160, 160, 160);
       backdrop-filter: blur(10px);
       padding-inline: 0.5rem;
       border-radius: 50px;
@@ -105,7 +104,7 @@
     }
 
     p {
-      color: white;
+      color: black;
       opacity: 0;
       transition: 0.5s;
       position: absolute;
@@ -129,7 +128,7 @@
         color: white;
         padding: 0.25rem 1rem;
         border-radius: 50px;
-        background-color: #b3b3b32b;
+        background-color: rgb(160, 160, 160);
         transition: all 0.3s ease-in-out;
         font-weight: 400;
 
@@ -181,6 +180,23 @@
   .Projects__section {
     background-color: $dark-bg;
     .project {
+      background-color: $grey-dm;
+
+      h2,
+      p {
+        color: white;
+      }
+
+      ul {
+        background-color: rgb(100, 100, 100);
+      }
+
+      .project-links-container {
+        a {
+          background-color: rgb(100, 100, 100);
+        }
+      }
+
       &::before {
         opacity: 1;
       }
