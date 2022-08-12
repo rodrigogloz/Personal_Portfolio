@@ -61,7 +61,7 @@ export const Header = () => {
       >
         <div className="Header__nav-container">
           <a className="tag-logo font-subtitle gradient-text" href="#home">
-            &lt;<span className="large-name"> RodrigoGloz </span>/&gt;
+            &lt;RodrigoGloz/&gt;
           </a>
 
           <nav className="Header__nav">
