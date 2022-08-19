@@ -43,7 +43,7 @@ export const ContactForm = () => {
         <input
           type="hidden"
           name="_next"
-          value="https://rodrigoglozdev.com/thankYou.html"
+          value="https://rodrigoglozdev.com/pages/thankYou.html"
         />
         {touched.name && errors.name && <span>{errors.name}</span>}
         <input
