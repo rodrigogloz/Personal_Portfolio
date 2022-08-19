@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        font-family: "Raleway", sans-serif;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+      }
+
+      body {
+        background-image: -webkit-linear-gradient(
+          35deg,
+          rgb(9, 218, 255),
+          rgb(166, 97, 255)
+        );
+        height: 100vh;
+        display: grid;
+        align-content: center;
+        position: relative;
+      }
+
+      p {
+        color: white;
+        text-align: center;
+      }
+
+      .thankYou-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        height: fit-content;
+        background-color: rgb(44, 44, 44);
+        gap: 2rem;
+        margin-inline: 1.25rem;
+        padding: 2rem;
+      }
+
+      .gradient-text {
+        background: -webkit-linear-gradient(
+          35deg,
+          rgb(9, 218, 255),
+          rgb(166, 97, 255)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      a {
+        color: rgb(81 162 255);
+        text-decoration: none;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        color: rgb(9, 218, 255);
+        transition: 0.5s;
+      }
+    </style>
+
+    <title>Mensaje enviado</title>
+  </head>
+  <body>
+    <div class="thankYou-container">
+      <h1 class="gradient-text">¡Mensaje enviado!</h1>
+      <p>
+        Tu mensaje ha sido enviado correctamente.<br />
+        <br />
+        Gracias por contactarme, pronto recibirás una respuesta.
+      </p>
+      <a href="https://rodrigoglozdev.com/">Volver a la página de inicio</a>
+    </div>
+  </body>
+</html>

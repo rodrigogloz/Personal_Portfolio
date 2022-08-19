@@ -34,7 +34,17 @@ export const ContactForm = () => {
         console.log(values);
       }}
     >
-      <Form onSubmit={handleSubmit}>
+      <Form
+        onSubmit={handleSubmit}
+        action="https://formsubmit.co/contacto@rodrigoglozdev.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Nuevo correo entrante" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://rodrigoglozdev.com/thankYou.html"
+        />
         {touched.name && errors.name && <span>{errors.name}</span>}
         <input
           type="text"
