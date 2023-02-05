@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik, Formik, Form } from "formik";
 import * as Yup from "yup";
+import emailjs from "emailjs-com";
 
 export const ContactForm = () => {
+  const [messageSent, setMessageSent] = useState(false);
+  const [messageError, setMessageError] = useState(false);
+
   const { handleSubmit, errors, touched, getFieldProps } = useFormik({
     initialValues: {
       name: "",
@@ -10,8 +14,24 @@ export const ContactForm = () => {
       subject: "",
       message: "",
     },
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: (values, { resetForm }) => {
+      emailjs
+        .sendForm(
+          "service_e7hqua4",
+          "template_6jfdsp9",
+          ".contactForm",
+          "_O_EZMIznLRBItjTr"
+        )
+        .then(
+          (result) => {
+            resetForm();
+            setMessageSent(true);
+          },
+          (error) => {
+            console.log(error.text);
+            setMessageError(true);
+          }
+        );
     },
     validationSchema: Yup.object({
       name: Yup.string()
@@ -28,17 +48,8 @@ export const ContactForm = () => {
   });
 
   return (
-    <Formik
-      initialValues={{ name: "", email: "", subject: "", message: "" }}
-      onSubmit={(values) => {
-        console.log(values);
-      }}
-    >
-      <Form
-        onSubmit={handleSubmit}
-        action="https://formsubmit.co/contacto@rodrigoglozdev.com"
-        method="POST"
-      >
+    <Formik initialValues={{ name: "", email: "", subject: "", message: "" }}>
+      <Form onSubmit={handleSubmit} className="contactForm">
         <input type="hidden" name="_subject" value="Nuevo correo entrante" />
         <input
           type="hidden"
@@ -75,6 +86,17 @@ export const ContactForm = () => {
         />
 
         <button type="submit">Enviar mensaje</button>
+        {messageSent && 
+          <p className="message-sent">
+            ¡Tu mensaje se ha enviado correctamente!
+          </p>
+        }
+        {messageError && 
+          <p className="message-error">
+            Ha habido un problema a la hora de enviar tu mensaje, por favor
+            contáctame por Linkedin hasta que se solucione el error.
+          </p>
+        }
       </Form>
     </Formik>
   );
